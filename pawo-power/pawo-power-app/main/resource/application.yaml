@@ -12,4 +12,27 @@ spring:
     host: 192.168.3.140
     port: 8899
     password:
+  #mybatis-plus 要求配置
+  datasource:
+#    driver-class-name: org.h2.Driver
+#    schema: classpath:db/schema-h2.sql
+#    data: classpath:db/data-h2.sql
+    url: jdbc:h2:mem:test
+    username: root
+    password: test
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*/*Mapper.xml
+  typeAliasesPackage: com.haiyi.i2.*.entity
+  global-config:
+    id-type: 2
+    field-strategy: 2
+    db-column-underline: true
+    refresh-mapper: true
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    # 配置JdbcTypeForNull, oracle数据库必须配置
+    jdbc-type-for-null: 'null'
 

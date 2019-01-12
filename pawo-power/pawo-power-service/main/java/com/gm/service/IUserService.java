@@ -6,6 +6,8 @@
 
 package com.gm.service;
 
+import com.baomidou.mybatisplus.service.IService;
+import com.gm.entity.SysUser;
 import com.gm.po.UserPo;
 
 import java.util.List;
@@ -20,13 +22,20 @@ import java.util.List;
  * @version 1.0
  * @since JDK 1.7
  */
-public interface IUserService {
+public interface IUserService extends IService<SysUser> {
 
     /**
-     * 获取用户列表信息
+     * 通过缓存获取用户列表信息
      *
      * @return 用户列表信息
      */
-    List<UserPo> listUserPo();
+    List<UserPo> listUserPoByCache();
+
+    /**
+     * 通过数据库获取用户列表信息
+     *
+     * @return 用户列表信息
+     */
+    List<UserPo> listUserPoByDateBase();
 
 }

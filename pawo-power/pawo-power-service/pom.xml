@@ -15,6 +15,7 @@
             <artifactId>pawo-power-dao</artifactId>
             <version>0.0.1</version>
         </dependency>
+
     </dependencies>
 
     <parent>

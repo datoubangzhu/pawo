@@ -13,6 +13,7 @@ import com.gm.service.IUserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -39,23 +40,23 @@ public class UserServiceImpl implements IUserService{
     private HashOperations<String,Object,Object> hashOperations;
 
     @Autowired
-    public UserServiceImpl(HashOperations<String, Object, Object> hashOperations) {
-        this.hashOperations = hashOperations;
+    public UserServiceImpl(RedisTemplate<String,Object> redisTemplate) {
+        this.hashOperations = redisTemplate.opsForHash();
     }
 
 
-
-
     @Override
-    public List<UserPo> listUserPo() {
+    public List<UserPo> listUserPoByCache() {
         List<UserPo> userPos = Lists.newArrayList();
         List<Object> userPoList = hashOperations.values(USER_KEY);
         for(Object o:userPoList){
-
+            userPos.add((UserPo) o);
         }
+        return userPos;
+    }
 
-
-        log.info("执行UserServiceImpl 中 listUserPo方法---------");
+    @Override
+    public List<UserPo> listUserPoByDateBase() {
         return null;
     }
 }
