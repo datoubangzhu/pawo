@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * <p> </p>
+ * <p> mybatisplus 配置类 </p>
  *
  * <pre> Created: 2019-01-12 18:35  </pre>
  * <pre> Project: pawo-power  </pre>
