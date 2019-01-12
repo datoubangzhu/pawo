@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pawo-power-app" />
+        <module name="pawo-power-common" />
+        <module name="pawo-power-dao" />
+        <module name="pawo-power-service" />
+        <module name="pawo-power-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pawo-power" target="1.7" />
+      <module name="pawo-power-app" target="1.7" />
+      <module name="pawo-power-common" target="1.7" />
+      <module name="pawo-power-dao" target="1.7" />
+      <module name="pawo-power-service" target="1.7" />
+      <module name="pawo-power-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

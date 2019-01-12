@@ -1,0 +1,15 @@
+server:
+  port: 20002
+spring:
+  rabbitmq:
+    addresses: 127.0.0.1
+#    username: gmzhao
+#    password: 123456
+    virtual-host: /pawo_power
+    username: gmzhao
+    password: 123456
+  redis:
+    host: 192.168.3.140
+    port: 8899
+    password:
+

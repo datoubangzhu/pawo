@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Admin Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">AdminStrap</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Dashboard</a></li>
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Welcome, Nikki</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+          </div>
+          <div class="col-md-2">
+            <div class="dropdown create">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Create Content
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" class="create" aria-labelledby="dropdownMenu1">
+                <li><a type="button" data-toggle="modal" data-target="#myModal">Add Page</a></li>
+                <li><a href="#">Add Post</a></li>
+                <li><a href="#">Add User</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+    <div class="container">
+    <ol class="breadcrumb">
+     <li class="breadcrumb-item active">Dashboard</li>
+    </ol>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item active main-color-bg"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>  Dashboard</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>  Page
+                <span class="badge">42</span></a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>  Posts
+                <span class="badge">58</span></a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Users
+                <span class="badge">203</span></a>
+            </div>
+            <div class="well">
+              <h5>DISk SPACE USED</h5>
+              <div class="progress">
+               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                 60%
+               </div>
+             </div>
+            <h5>BANDWIDTH USED</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                40%
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+              <div class="panel panel-default">
+                <div class="panel-heading main-color-bg">
+                  <h3 class="panel-title ">Edit Page</h3>
+                </div>
+                <div class="panel-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="text">Page title:</label>
+                          <input type="text" class="form-control" id="title" placeholder="add page title">
+                        </div>
+                        <label for="text">Page body:</label>
+                        <textarea name="editor1"></textarea>
+                        <script>
+                            CKEDITOR.replace( 'editor1' );
+                        </script>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> Published </label>
+                        </div>
+                        <div class="form-group">
+                          <label for="text">Meta Tags:</label>
+                          <input type="text" class="form-control" id="tags" placeholder="add some tags...">
+                        </div>
+                        <div class="form-group">
+                          <label for="tetx">Meta Description:</label>
+                          <input type="text" class="form-control" id="description" placeholder="add description...">
+                        </div>
+                        <a class="btn btn-default" href="pages.html" role="button">Close</a>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  <footer id="footer">
+     <marquee>Admin Dashboard &copy; 2017</marquee>
+  </footer>
+</html>

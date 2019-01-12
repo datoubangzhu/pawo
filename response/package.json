@@ -1,0 +1,15 @@
+{
+  "name": "bootStrapDemo",
+  "version": "1.0.0",
+  "description": "Screenshots of the project Main page [![Screenshot from 2017-04-12 16:23:18.png](https://s17.postimg.org/5kfdigzjj/Screenshot_from_2017-04-12_16_23_18.png)](https://postimg.org/image/5kfdigzjf/) Admin page [![Screenshot from 2017-04-12 16:23:29.png](https://s16.postimg.org/v5ns8cjd1/Screenshot_from_2017-04-12_16_23_29.png)](https://postimg.org/image/yp9py5m2p/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "datoubangzhu",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
