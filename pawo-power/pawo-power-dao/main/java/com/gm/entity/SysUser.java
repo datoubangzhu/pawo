@@ -13,6 +13,7 @@ import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableLogic;
 import com.baomidou.mybatisplus.annotations.TableName;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.io.Serializable;
 
@@ -27,6 +28,7 @@ import java.io.Serializable;
  * @since JDK 1.7
  */
 @TableName("SYS_USER")
+@Document(indexName = "name_index", type = "sys_user")
 public class SysUser extends Model<SysUser>{
 
     private static final long serialVersionUID = 7579574407234534547L;

@@ -68,7 +68,7 @@ public class AuthController {
      */
     @GetMapping("login")
     public @ResponseBody ResponseEntity auth(@RequestParam("username")String username,
-                                             @RequestParam("password") String userPassword){
+                                             @RequestParam("password")String userPassword){
         UserRequest user = (UserRequest)hashOperations.get(USER_KEY,username);
         String password = user.getPassword();
         boolean valid = BCrypt.checkpw(password,userPassword);

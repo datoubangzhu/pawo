@@ -20,6 +20,13 @@ spring:
     url: jdbc:h2:mem:test
     username: root
     password: test
+  data:
+    elasticsearch:
+      ##es地址
+      cluster-nodes: 127.0.0.1:20003
+      cluster-name: elasticsearch #节点名称
+      repositories:
+              enabled: true
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*/*Mapper.xml
   typeAliasesPackage: com.haiyi.i2.*.entity
