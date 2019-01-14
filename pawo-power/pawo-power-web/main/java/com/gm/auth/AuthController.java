@@ -45,7 +45,7 @@ import cn.hutool.core.date.DateUtil;
  *
  * @author gmzhao
  * @version 1.0
- * @since JDK 1.7e
+ * @since JDK 1.7
  */
 @Controller
 @RequestMapping("pawo/user")

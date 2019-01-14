@@ -24,6 +24,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 /**
  * <p> </p>
@@ -35,7 +36,7 @@ import lombok.extern.slf4j.Slf4j;
  * @version 1.0
  * @since JDK 1.7
  */
-@Component
+@Service
 @Slf4j
 public class UserServiceImpl extends ServiceImpl<UserMapper,SysUser> implements IUserService{
 
