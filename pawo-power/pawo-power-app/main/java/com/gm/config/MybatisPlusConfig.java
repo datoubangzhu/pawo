@@ -30,7 +30,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableConfigurationProperties(MybatisPlusProperties.class)
-@MapperScan("com.haiyi.**.mapper*")
+@MapperScan("com.gm.mapper")
 public class MybatisPlusConfig {
 
 
@@ -43,16 +43,15 @@ public class MybatisPlusConfig {
     }
 
     /**
-     * 注入主键生成器
+     * 注入主键生成器，此处为Oracle主键生成器来实现
      */
     @Bean
     public IKeyGenerator keyGenerator() {
         return new OracleKeyGenerator();
     }
 
-
     /**
-     * 注入sql注入器
+     * Sql 注入器。此处配置逻辑删除，与@TableLogic配合使用
      */
     @Bean
     public ISqlInjector sqlInjector() {

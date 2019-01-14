@@ -6,6 +6,8 @@
 
 package com.gm.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
 import com.gm.entity.SysUser;
 import com.gm.po.UserPo;
@@ -34,8 +36,11 @@ public interface IUserService extends IService<SysUser> {
     /**
      * 通过数据库获取用户列表信息
      *
+     * @param current 当前页码
+     * @param size 一页数据量
+     * @param type 用户类型
      * @return 用户列表信息
      */
-    List<UserPo> listUserPoByDateBase();
+    IPage<UserPo> listUserPoByDateBase(Page<UserPo> page, String type );
 
 }
