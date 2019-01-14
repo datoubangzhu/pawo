@@ -1,5 +1,5 @@
 ## 秒杀系统 PAWO
-> 简介：pawo 是一个秒杀系统。用于模拟定时抢单。
+> 简介：pawo 是一个秒杀系统。用于模拟定时抢单。支持分布式。
 
 Springboot+Redis+RabbitMQ+Dubbo
 
