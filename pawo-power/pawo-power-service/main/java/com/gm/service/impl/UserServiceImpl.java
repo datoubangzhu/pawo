@@ -8,6 +8,9 @@ package com.gm.service.impl;
 
 import com.google.common.collect.Lists;
 
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.gm.entity.SysUser;
+import com.gm.mapper.UserMapper;
 import com.gm.po.UserPo;
 import com.gm.service.IUserService;
 
@@ -32,7 +35,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Component
 @Slf4j
-public class UserServiceImpl implements IUserService{
+public class UserServiceImpl extends ServiceImpl<UserMapper,SysUser> implements IUserService{
 
 
     private final static String USER_KEY = "pawo:auth:user";

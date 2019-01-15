@@ -14,7 +14,9 @@ import org.quartz.JobDetail;
 import org.quartz.JobKey;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
+import org.quartz.Trigger;
 import org.quartz.TriggerBuilder;
+import org.quartz.TriggerKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -80,14 +82,27 @@ public class SchedulerManager {
     }
 
 
+    /**
+     * 获取scheduler中job执行状态
+     *
+     * @return 结果
+     * @throws SchedulerException 异常
+     */
+    public String getStatus(String jobName,String jobGroup) throws SchedulerException {
+        TriggerKey triggerKey =  new TriggerKey(jobName, jobGroup);
+        Trigger.TriggerState state = scheduler.getTriggerState(triggerKey);
+        return state.toString();
+    }
+
+
 
 
     /**
      * 动态创建Job
      * 此处的任务可以配置可以放到properties或者是放到数据库中
      * Trigger:name和group 目前和job的name、group一致，之后可以扩展归类
-     * @param scheduler
-     * @throws SchedulerException
+     * @param scheduler 参数
+     * @throws SchedulerException 异常
      */
     private void scheduleJob(String cron, Scheduler scheduler, String jobName, String jobGroup, Class<? extends Job> jobClass
     ,JobBeanParam param) throws SchedulerException {

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+  ~ Copyright (c) 2012-2019. haiyi Inc.
+  ~ pawo-power All rights reserved.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gm.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.gm.entity.SysUser">
+        <id column="IID" property="iid" />
+        <id column="USERNAME" property="username" />
+        <id column="PASSWORD" property="password" />
+        <id column="TYPE" property="type" />
+        <id column="CREATE_TIME" property="createTime" />
+        <id column="DELETE_FLAG" property="deleteFlag" />
+    </resultMap>
+
+
+
+    <select id="listByName" resultMap="BaseResultMap">
+      select iid,username,password,type,create_time from sys_user where delete_flag = 0
+      <if test="type!=null and type!=''" >
+          and type = #{type}
+      </if>
+    </select>
+</mapper>

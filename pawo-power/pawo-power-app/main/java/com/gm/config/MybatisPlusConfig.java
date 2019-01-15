@@ -28,36 +28,36 @@ import org.springframework.context.annotation.Configuration;
  * @version 1.0
  * @since JDK 1.7
  */
-@Configuration
-@EnableConfigurationProperties(MybatisPlusProperties.class)
-@MapperScan("com.haiyi.**.mapper*")
+//@Configuration
+//@EnableConfigurationProperties(MybatisPlusProperties.class)
+//@MapperScan("com.haiyi.**.mapper*")
 public class MybatisPlusConfig {
-
-
-    /**
-     * 分页插件，自动识别数据库类型
-     */
-    @Bean
-    public PaginationInterceptor paginationInterceptor() {
-        return new PaginationInterceptor();
-    }
-
-    /**
-     * 注入主键生成器
-     */
-    @Bean
-    public IKeyGenerator keyGenerator() {
-        return new OracleKeyGenerator();
-    }
-
-
-    /**
-     * 注入sql注入器
-     */
-    @Bean
-    public ISqlInjector sqlInjector() {
-        return new LogicSqlInjector();
-    }
+//
+//
+//    /**
+//     * 分页插件，自动识别数据库类型
+//     */
+//    @Bean
+//    public PaginationInterceptor paginationInterceptor() {
+//        return new PaginationInterceptor();
+//    }
+//
+//    /**
+//     * 注入主键生成器
+//     */
+//    @Bean
+//    public IKeyGenerator keyGenerator() {
+//        return new OracleKeyGenerator();
+//    }
+//
+//
+//    /**
+//     * 注入sql注入器
+//     */
+//    @Bean
+//    public ISqlInjector sqlInjector() {
+//        return new LogicSqlInjector();
+//    }
 
 }
 

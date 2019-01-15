@@ -79,7 +79,7 @@ public class JobExecute extends QuartzJobBean {
         JobBeanParam param = (JobBeanParam) jobDataMap.get("param");
         log.info("执行job，获取参数:  "+param.toString());
         final IUserService userService = SpringContextUtil.getBean(IUserService.class);
-        userService.listUserPo();
+        userService.listUserPoByCache();
         log.info("job开始执行-----------");
        Future future =  JOB_EXECUTOR_POOL.submit(new ScheduleRun(param));
         try {
