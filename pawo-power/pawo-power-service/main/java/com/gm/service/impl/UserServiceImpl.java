@@ -6,6 +6,11 @@
 
 package com.gm.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.gm.entity.SysUser;
+import com.gm.mapper.UserMapper;
 import com.google.common.collect.Lists;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
@@ -22,6 +27,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 /**
  * <p> </p>
@@ -33,7 +39,7 @@ import lombok.extern.slf4j.Slf4j;
  * @version 1.0
  * @since JDK 1.7
  */
-@Component
+@Service
 @Slf4j
 public class UserServiceImpl extends ServiceImpl<UserMapper,SysUser> implements IUserService{
 
@@ -59,7 +65,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,SysUser> implements 
     }
 
     @Override
-    public List<UserPo> listUserPoByDateBase() {
-        return null;
+    public IPage<UserPo> listUserPoByDateBase( Page<UserPo> page ,String type) {
+        return baseMapper.listByName(page,type);
     }
 }

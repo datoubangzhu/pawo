@@ -6,9 +6,12 @@ package com.gm.auth;/*
 
 
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.gm.po.UserPo;
 import com.gm.request.UserRequest;
 
+import com.gm.service.IUserService;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
@@ -48,14 +51,15 @@ import cn.hutool.core.date.DateUtil;
 @RequestMapping("pawo/user")
 public class AuthController {
 
-
+    private IUserService userService;
     private  HashOperations<String,Object,Object> hashOperations;
 
     private final static String USER_KEY = "pawo:auth:user";
 
     @Autowired
-    public AuthController(RedisTemplate<String,Object> redisTemplate) {
+    public AuthController(RedisTemplate<String,Object> redisTemplate,IUserService userService) {
         this.hashOperations = redisTemplate.opsForHash();
+        this.userService = userService;
     }
 
 
@@ -68,7 +72,7 @@ public class AuthController {
      */
     @GetMapping("login")
     public @ResponseBody ResponseEntity auth(@RequestParam("username")String username,
-                                             @RequestParam("password") String userPassword){
+                                             @RequestParam("password")String userPassword){
         UserRequest user = (UserRequest)hashOperations.get(USER_KEY,username);
         String password = user.getPassword();
         boolean valid = BCrypt.checkpw(password,userPassword);
@@ -116,6 +120,23 @@ public class AuthController {
     public @ResponseBody ResponseEntity list(){
         List<Object> userPoList = hashOperations.values(USER_KEY);
         return ResponseEntity.ok(userPoList);
+    }
+
+
+    /**
+     * 查询用户列表信息
+     * @param page 第几页
+     * @param pageSize 每页显示条数
+     * @param type 用户类型，非必传
+     * @return 用户列表信息
+     */
+    @GetMapping("list/page")
+    public @ResponseBody ResponseEntity listPage(@RequestParam(value = "page",required = false) Integer page,
+                                                 @RequestParam(value = "pageSize",required = false) Integer pageSize,
+                                                 @RequestParam(value = "type",required = false) String type){
+        Page<UserPo> userPoPage = new Page<>(page,pageSize);
+        IPage<UserPo> userPoIPage = userService.listUserPoByDateBase(userPoPage,type);
+        return ResponseEntity.ok(userPoIPage);
     }
 
 

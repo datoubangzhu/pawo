@@ -6,12 +6,12 @@
 
 package com.gm.mapper;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.gm.entity.SysUser;
-
+import com.gm.po.UserPo;
 import org.springframework.data.repository.query.Param;
-
-import java.util.List;
 
 /**
  * <p> </p>
@@ -29,8 +29,10 @@ public interface UserMapper extends BaseMapper<SysUser> {
     /**
      * 根据username查找用户信息
      *
+     * @param page 分页信息
      * @param type 类型
      * @return 用户信息
      */
-    List<SysUser> listByName(@Param("type") String type);
+    IPage<UserPo> listByName(Page page,
+                             @Param("type") String type);
 }
