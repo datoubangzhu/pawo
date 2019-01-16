@@ -16,6 +16,12 @@
 
 
     <dependencies>
+        <!-- 服务内其他模块依赖  -->
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-power-common</artifactId>
+            <version>0.0.1</version>
+        </dependency>
         <!-- dubbo接口基础类依赖   -->
         <dependency>
             <groupId>iknow.u</groupId>
@@ -53,6 +59,7 @@
             <artifactId>dubbo</artifactId>
             <version>2.6.2</version>
         </dependency>
+
     </dependencies>
 
     

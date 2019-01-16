@@ -102,7 +102,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.8.11" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.8.11" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.8.11" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty:3.10.6.Final" level="project" />
     <orderEntry type="library" name="Maven: com.ning:compress-lzf:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.tdunning:t-digest:3.0" level="project" />
     <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.6" level="project" />
@@ -110,6 +109,20 @@
     <orderEntry type="library" name="Maven: com.twitter:jsr166e:1.1.0" level="project" />
     <orderEntry type="module" module-name="pawo-power-dao" />
     <orderEntry type="module" module-name="pawo-power-service" />
+    <orderEntry type="module" module-name="pawo-power-consumer" />
+    <orderEntry type="library" name="Maven: iknow.u:pawo-common-basic:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.boot:dubbo-spring-boot-starter:0.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:2.12.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-client:2.12.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.boot:dubbo-spring-boot-actuator:0.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.boot:dubbo-spring-boot-autoconfigure:0.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:dubbo:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.16.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.21.0-GA" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.netty:netty:3.2.5.Final" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.12.RELEASE" level="project" />
@@ -133,7 +146,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.11" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.16.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.16.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.16.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.16.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.16.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:1.5.12.RELEASE" level="project" />

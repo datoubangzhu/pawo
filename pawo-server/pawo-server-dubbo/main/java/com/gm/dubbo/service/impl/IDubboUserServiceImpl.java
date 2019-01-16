@@ -4,6 +4,8 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.gm.user.DubboUserPo;
 import com.gm.user.IDubboUserService;
 
+import org.springframework.stereotype.Component;
+
 import lombok.extern.slf4j.Slf4j;
 
 
@@ -14,6 +16,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Service
 @Slf4j
+@Component
 public class IDubboUserServiceImpl implements IDubboUserService {
 
     @Override

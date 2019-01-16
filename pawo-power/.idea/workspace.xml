@@ -32,25 +32,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DubboService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SysUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-dao/main/java/com/gm/entity/SysUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-web/main/java/com/gm/auth/AuthController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="156" column="53" lean-forward="true" selection-start-line="156" selection-start-column="53" selection-end-line="156" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DubboService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/impl/DubboService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="192">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DubboUserPo.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-basic/0.0.1/pawo-common-basic-0.0.1.jar!/com/gm/user/DubboUserPo.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.16.RELEASE/spring-web-4.3.16.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DubboConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-app/main/java/com/gm/config/DubboConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="39" column="65" lean-forward="true" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-consumer/pom.xml">
+        <entry file="file://$PROJECT_DIR$/pawo-power-app/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="500">
+              <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PawoApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pawo-power-app/main/java/com/gm/PawoApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-app/main/resource/application.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -68,6 +141,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>DubboServiceImpl</find>
+      <find>com.haiyi.i2.*.entity</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -79,16 +153,21 @@
         <option value="$PROJECT_DIR$/pawo-power-service/main/java/com/gm/service/IUserService.java" />
         <option value="$PROJECT_DIR$/pawo-power-dao/main/java/com/gm/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/pawo-power-service/main/java/com/gm/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pawo-power-web/main/java/com/gm/auth/AuthController.java" />
         <option value="$PROJECT_DIR$/pawo-power-web/main/java/com/gm/test/JobController.java" />
-        <option value="$PROJECT_DIR$/pawo-power-app/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/pawo-power-app/main/resource/application.yaml" />
         <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/test/IDubboService.java" />
         <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/test/impl/DubboServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pawo-power-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/test/impl/DubboService.java" />
+        <option value="$PROJECT_DIR$/pawo-power-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/pawo-power-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pawo-power-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pawo-power-app/main/java/com/gm/config/ESConfig.java" />
+        <option value="$PROJECT_DIR$/pawo-power-app/pom.xml" />
+        <option value="$PROJECT_DIR$/pawo-power-app/main/resource/application.yaml" />
         <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/impl/DubboService.java" />
+        <option value="$PROJECT_DIR$/pawo-power-web/main/java/com/gm/auth/AuthController.java" />
+        <option value="$PROJECT_DIR$/pawo-power-app/main/java/com/gm/config/DubboConfig.java" />
+        <option value="$PROJECT_DIR$/pawo-power-app/main/java/com/gm/PawoApplication.java" />
       </list>
     </option>
   </component>
@@ -156,6 +235,53 @@
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
               <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
@@ -260,6 +386,16 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gm" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -274,6 +410,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pawo-server/pom.xml" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -336,6 +478,17 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
+    <configuration name="PawoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gm.PawoApplication" />
+      <module name="pawo-power-app" />
+      <envs />
+    </configuration>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -345,6 +498,11 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.PawoApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -368,18 +526,18 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25373134" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25373134" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14440826" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37024972" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3767644" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4495114" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -388,6 +546,32 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25373134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14440826" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3767644" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -396,7 +580,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -501,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-web/main/java/com/gm/dubbo/JobController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-dao/main/java/com/gm/po/UserPo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
@@ -525,42 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-app/main/resource/application.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-dao/main/java/com/gm/request/UserRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-web/main/java/com/gm/auth/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="52" column="47" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -581,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-basic/0.0.1/pawo-common-basic-0.0.1.jar!/com/gm/user/IDubboUserService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -597,14 +735,161 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.2/lombok-1.18.2.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-web/main/java/com/gm/dubbo/JobController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.12.RELEASE/spring-boot-1.5.12.RELEASE.jar!/org/springframework/boot/context/properties/ConfigurationProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/main/java/com/gm/config/ESConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="51" column="43" lean-forward="false" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-dao/main/java/com/gm/elastic/UserSerachDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.16.RELEASE/spring-web-4.3.16.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.2/dubbo-2.6.2.jar!/com/alibaba/dubbo/config/annotation/Reference.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-771">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-dao/main/java/com/gm/entity/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/main/resource/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-basic/0.0.1/pawo-common-basic-0.0.1.jar!/com/gm/user/DubboUserPo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/impl/DubboService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="192">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-web/main/java/com/gm/auth/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="156" column="53" lean-forward="true" selection-start-line="156" selection-start-column="53" selection-end-line="156" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/main/java/com/gm/config/DubboConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="39" column="65" lean-forward="true" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/main/java/com/gm/PawoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
           </folding>
         </state>
       </provider>

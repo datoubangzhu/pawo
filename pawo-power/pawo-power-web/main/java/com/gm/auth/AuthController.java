@@ -12,6 +12,7 @@ import com.google.common.collect.Lists;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.gm.dubbo.impl.DubboService;
 import com.gm.po.UserPo;
 import com.gm.request.UserRequest;
 
@@ -55,15 +56,17 @@ import cn.hutool.core.date.DateUtil;
 @RequestMapping("pawo/user")
 public class AuthController {
 
-    private IUserService userService;
-    private  HashOperations<String,Object,Object> hashOperations;
+    private IUserService                         userService;
+    private HashOperations<String,Object,Object> hashOperations;
+    private DubboService                         dubboService;
 
     private final static String USER_KEY = "pawo:auth:user";
 
     @Autowired
-    public AuthController(RedisTemplate<String,Object> redisTemplate,IUserService userService) {
+    public AuthController(RedisTemplate<String,Object> redisTemplate,IUserService userService,DubboService dubboService) {
         this.hashOperations = redisTemplate.opsForHash();
         this.userService = userService;
+        this.dubboService=dubboService;
     }
 
 
@@ -149,4 +152,9 @@ public class AuthController {
     }
 
 
+    @GetMapping("dubbo")
+    public @ResponseBody ResponseEntity dubboTest(){
+        String resulte = dubboService.getDubboUser();
+        return ResponseEntity.ok(resulte);
+    }
 }

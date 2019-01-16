@@ -5,12 +5,3 @@ spring:
     host: 192.168.3.140
     port: 8899
     password:
-  dubbo:
-    application:
-      name: provider #服务名称
-    registry:
-      address: zookeeper://127.0.0.1:2181
-    protocol:
-      name: dubbo #dubbo协议
-      port: 5005
-    scan: com.gm.dubbo.service #声明需要暴露的服务接口

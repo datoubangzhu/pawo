@@ -47,6 +47,11 @@
             <artifactId>pawo-power-service</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-power-consumer</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
     
 </project>

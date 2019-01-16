@@ -2,7 +2,10 @@ package com.gm.dubbo.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.gm.user.DubboUserPo;
 import com.gm.user.IDubboUserService;
@@ -20,14 +23,19 @@ import com.gm.user.IDubboUserService;
 @Component
 public class DubboService {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(DubboService.class);
+
     @Reference
-    IDubboUserService dubboUserService;
+    private IDubboUserService dubboUserService;
 
 
     /**
      * 调用 dubbo 服务service
      */
-    public void getDubboUser() {
+    public String getDubboUser() {
         DubboUserPo dubboUserPo = dubboUserService.getDubboUser();
+        final String string = dubboUserPo.toString();
+        LOGGER.info("调用dubbo服务成功----------，返回结果 {}", string);
+        return string;
     }
 }
