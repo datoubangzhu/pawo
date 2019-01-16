@@ -1,14 +1,14 @@
 ## 秒杀系统 PAWO
-> 简介：pawo 是一个秒杀系统。用于模拟定时抢单。支持分布式。
+> 简介：pawo 是一个秒杀系统。用于模拟定时抢单。支持rpc分布式。
 
 Springboot+Redis+RabbitMQ+Dubbo
 
 
 #### 项目服务模块：
 
-- pawo-power 抢单服务
-- pawo-server 提供定单处理服务
-- pawo-common 定单处理接口
+- pawo-power 抢单接口和基础服务
+- pawo-server 提供订单处理服务
+- pawo-common 订单处理接口
 - response 页面部分
 
 ###### pawo-power 服务
@@ -20,11 +20,11 @@ Springboot+Redis+RabbitMQ+Dubbo
 - pawo-power-web  接口模块，包含抢单，基础数据注册等接口
 
 ###### pawo-server 服务
-pawo-server-dubbo dubbo服务模块，提供dubbo接口实现类
+pawo-server-dubbo dubbo服务模块，提供rpc接口实现类，处理抢单逻辑看，支持负载均衡
 
 
 ###### pawo-common 模块
-pawo-common-basic 提供基础信息公共接口
+pawo-common-basic 提供基础rpc公共接口，包括抢单接口等
 
 
 
