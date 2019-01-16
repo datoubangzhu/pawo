@@ -1,7 +1,7 @@
 ## 秒杀系统 PAWO
 > 简介：pawo 是一个秒杀系统。用于模拟定时抢单。支持rpc分布式。
 
-Springboot+Redis+RabbitMQ+Dubbo
+Springboot+Redis+RabbitMQ+Dubbo+Nginx
 
 
 #### 项目服务模块：
