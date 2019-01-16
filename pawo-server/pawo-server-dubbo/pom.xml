@@ -28,7 +28,7 @@
         </dependency>
         <dependency>
             <groupId>iknow.u</groupId>
-            <artifactId>pawo-common-basic</artifactId>
+            <artifactId>pawo-server-dao</artifactId>
             <version>0.0.1</version>
         </dependency>
         <!--  dubbo依赖   -->

@@ -2,7 +2,8 @@ package com.gm.dubbo.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.gm.user.DubboUserPo;
-import com.gm.user.IDubboUserService;
+import com.gm.user.service.IDubboUserService;
+
 
 import org.springframework.stereotype.Component;
 

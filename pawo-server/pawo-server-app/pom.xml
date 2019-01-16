@@ -46,6 +46,7 @@
             <artifactId>pawo-server-dubbo</artifactId>
             <version>0.0.1</version>
         </dependency>
+
     </dependencies>
 
     <properties>

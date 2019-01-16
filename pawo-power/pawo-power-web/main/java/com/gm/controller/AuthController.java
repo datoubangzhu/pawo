@@ -1,4 +1,4 @@
-package com.gm.auth;
+package com.gm.controller;
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
  * Copyright (c) 2012-2019. gmzhao.
@@ -6,17 +6,15 @@ package com.gm.auth;
  */
 
 
-
 import com.google.common.base.MoreObjects;
 import com.google.common.collect.Lists;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.gm.dubbo.impl.DubboService;
 import com.gm.po.UserPo;
 import com.gm.request.UserRequest;
-
 import com.gm.service.IUserService;
+
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
@@ -31,14 +29,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
 
 import cn.hutool.core.date.DatePattern;
-import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
 
 

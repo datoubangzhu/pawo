@@ -21,6 +21,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="pawo-server-dubbo" />
     <orderEntry type="module" module-name="pawo-server-common" />
+    <orderEntry type="library" name="Maven: iknow.u:pawo-common-basic:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-support:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:1.5.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:1.8.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:1.2.11.RELEASE" level="project" />
@@ -31,7 +33,19 @@
     <orderEntry type="library" name="Maven: redis.clients:jedis:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />
-    <orderEntry type="library" name="Maven: iknow.u:pawo-common-basic:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-boot-starter:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-core:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:1.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.4.6" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-generate:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.5.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.29" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:8.5.29" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.3.16.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.h2database:h2:1.4.197" level="project" />
+    <orderEntry type="module" module-name="pawo-server-dao" />
     <orderEntry type="library" name="Maven: com.alibaba.boot:dubbo-spring-boot-starter:0.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:2.12.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-client:2.12.0" level="project" />

@@ -23,6 +23,12 @@
 
 
     <dependencies>
+        <!-- 其他非启动模块依赖  -->
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-common-basic</artifactId>
+            <version>0.0.1</version>
+        </dependency>
         <!--   springboot自带依赖     -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -38,7 +44,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
+        <!--mybatisplus插件-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
 
     </dependencies>
 

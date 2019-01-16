@@ -9,6 +9,7 @@ package com.basic.util;
 import java.util.Date;
 import com.google.common.collect.Maps;
 
+import org.junit.Test;
 import org.junit.experimental.theories.DataPoint;
 
 import java.util.HashMap;
@@ -34,8 +35,6 @@ import lombok.extern.slf4j.Slf4j;
 public class DateTool {
 
 
-
-
     /**
      * @param date 日期，格式 yyyy-MM-dd HH:mm:ss
      * @return corn 表达式
@@ -44,5 +43,4 @@ public class DateTool {
         Date dateCorn  = DateTime.of(date.toString(), DatePattern.NORM_DATETIME_PATTERN);
         return DateUtil.format(dateCorn,"ss mm HH dd MM ? yyyy");
     }
-
 }

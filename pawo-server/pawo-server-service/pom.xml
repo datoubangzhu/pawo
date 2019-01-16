@@ -19,4 +19,13 @@
     <artifactId>pawo-server-service</artifactId>
     <version>0.0.1</version>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-server-dao</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
+
 </project>

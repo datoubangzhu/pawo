@@ -8,11 +8,15 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/pawo-power-dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/pawo-test/pom.xml" />
+        <option value="$PROJECT_DIR$/pawo-test2/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectDictionaryState">
+    <dictionary name="FitzYang" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

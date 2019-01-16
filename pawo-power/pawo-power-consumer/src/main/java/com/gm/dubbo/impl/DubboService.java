@@ -1,14 +1,12 @@
 package com.gm.dubbo.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.gm.user.DubboUserPo;
+import com.gm.user.service.IDubboUserService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
-import com.gm.user.DubboUserPo;
-import com.gm.user.IDubboUserService;
 
 /**
  * <p> dubbo 消费类</p>

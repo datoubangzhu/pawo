@@ -1,11 +1,13 @@
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2019. 赵贵明.
+ * Copyright (c) 2012-2019. haiyi Inc.
  * pawo-common All rights reserved.
  */
 
-package com.gm.user;
+package com.gm.user.service;
 
+
+import com.gm.user.DubboUserPo;
 
 /**
  * <p> </p>
