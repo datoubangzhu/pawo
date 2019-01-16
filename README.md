@@ -20,7 +20,7 @@ Springboot+Redis+RabbitMQ+Dubbo+Nginx
 - pawo-power-web  接口模块，包含抢单，基础数据注册等接口
 
 ###### pawo-server 服务
-pawo-server-dubbo dubbo服务模块，提供rpc接口实现类，处理抢单逻辑看，支持负载均衡
+pawo-server-dubbo dubbo服务模块，提供rpc接口实现类，处理抢单逻辑，支持负载均衡
 
 
 ###### pawo-common 模块
