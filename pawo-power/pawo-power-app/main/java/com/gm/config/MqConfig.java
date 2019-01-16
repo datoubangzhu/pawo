@@ -1,12 +1,9 @@
-package com.gm.config;/*
+/*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2018. haiyi Inc.
+ * Copyright (c) 2012-2018. 赵贵明.
  * pawo-power All rights reserved.
  */
-
-
-
-
+package com.gm.config;
 
 
 import org.springframework.amqp.core.AcknowledgeMode;
@@ -32,7 +29,7 @@ import org.springframework.context.annotation.Configuration;
  * <pre> Created: 2018-12-02 16:32  </pre>
  * <pre> Project: pawo-power  </pre>
  *
- * @author gmzhao
+ * @author 赵贵明
  * @version 1.0
  * @since JDK 1.7
  */

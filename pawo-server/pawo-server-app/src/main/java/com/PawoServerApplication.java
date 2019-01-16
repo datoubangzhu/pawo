@@ -1,6 +1,6 @@
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2018. haiyi Inc.
+ * Copyright (c) 2012-2018. 赵贵明.
  * pawo-server All rights reserved.
  */
 package com;

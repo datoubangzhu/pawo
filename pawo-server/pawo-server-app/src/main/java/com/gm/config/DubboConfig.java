@@ -1,6 +1,6 @@
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2019. haiyi Inc.
+ * Copyright (c) 2012-2019. 赵贵明.
  * pawo-server All rights reserved.
  */
 
@@ -15,10 +15,8 @@ import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.rmi.registry.Registry;
-
 /**
- * <p> </p>
+ * <p> dubbo 配置 </p>
  *
  * <pre> Created: 2019-01-16 11:16  </pre>
  * <pre> Project: pawo-server  </pre>
