@@ -4,10 +4,11 @@
 Springboot+Redis+RabbitMQ+Dubbo
 
 
-#### 项目模块：
+#### 项目服务模块：
 
 - pawo-power 抢单服务
-- pawo-server 定单处理服务
+- pawo-server 提供定单处理服务
+- pawo-common 定单处理接口
 - response 页面部分
 
 ###### pawo-power 服务
