@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+  ~ Copyright (c) 2012-2019. haiyi Inc. 
+  ~ pawo-common All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>iknow.u</groupId>
+        <artifactId>pawo-common</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <artifactId>pawo-common-basic</artifactId>
+    <version>0.0.1</version>
+
+
+
+</project>

@@ -1,10 +1,14 @@
-package com.gm.auth;/*
+package com.gm.auth;
+/*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2019. haiyi Inc.
+ * Copyright (c) 2012-2019. gmzhao.
  * pawo-power All rights reserved.
  */
 
 
+
+import com.google.common.base.MoreObjects;
+import com.google.common.collect.Lists;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.plugins.Page;
@@ -99,13 +103,16 @@ public class AuthController {
         }
         String password = userRequest.getPassword();
         String hashPassWord = BCrypt.hashpw(password,BCrypt.gensalt());
-//        Date createDate = userRequest.getDate();
-//        String date = DateUtil.date(createDate).toString(DatePattern.PURE_DATE_PATTERN);
+        final Date createDate = userRequest.getDate();
+        final Date currentDateTime = DateUtil.date();
+        final Date date =  MoreObjects.firstNonNull(createDate,currentDateTime);
+        final String creatTime = DateUtil.format(date,DatePattern.PURE_DATE_PATTERN);
+
         UserPo userPo = new UserPo();
         userPo.setUsername(userRequest.getUsername());
         userPo.setPassword(hashPassWord);
         userPo.setType(userRequest.getType());
-        userPo.setCreateTime("20190102");
+        userPo.setCreateTime(creatTime);
         hashOperations.put(USER_KEY,userName,userPo);
         return ResponseEntity.ok("创建成功");
     }
@@ -119,7 +126,9 @@ public class AuthController {
     @GetMapping("list")
     public @ResponseBody ResponseEntity list(){
         List<Object> userPoList = hashOperations.values(USER_KEY);
-        return ResponseEntity.ok(userPoList);
+        List<UserPo> userPos = Lists.newArrayList();
+        userPoList.forEach(user-> userPos.add((UserPo) user));
+        return ResponseEntity.ok(userPos);
     }
 
 
@@ -135,7 +144,7 @@ public class AuthController {
                                                  @RequestParam(value = "pageSize",required = false) Integer pageSize,
                                                  @RequestParam(value = "type",required = false) String type){
         Page<UserPo> userPoPage = new Page<>(page,pageSize);
-        IPage<UserPo> userPoIPage = userService.listUserPoByDateBase(userPoPage,type);
+        Page<UserPo> userPoIPage = userService.listUserPoByDateBase(userPoPage,type);
         return ResponseEntity.ok(userPoIPage);
     }
 

@@ -4,6 +4,10 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pawo-server-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pawo-server-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pawo-server-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pawo-server-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pawo-server-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pawo-server-web" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

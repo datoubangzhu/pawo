@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/pawo-power-common/pawo-power-common.iml" filepath="$PROJECT_DIR$/pawo-power-common/pawo-power-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/pawo-power-consumer/pawo-power-consumer.iml" filepath="$PROJECT_DIR$/pawo-power-consumer/pawo-power-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/pawo-power-dao/pawo-power-dao.iml" filepath="$PROJECT_DIR$/pawo-power-dao/pawo-power-dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pawo-power-dubbo/pawo-power-dubbo.iml" filepath="$PROJECT_DIR$/pawo-power-dubbo/pawo-power-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pawo-power-service/pawo-power-service.iml" filepath="$PROJECT_DIR$/pawo-power-service/pawo-power-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pawo-power-web/pawo-power-web.iml" filepath="$PROJECT_DIR$/pawo-power-web/pawo-power-web.iml" />
     </modules>

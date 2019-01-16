@@ -36,11 +36,10 @@ public interface IUserService extends IService<SysUser> {
     /**
      * 通过数据库获取用户列表信息
      *
-     * @param current 当前页码
-     * @param size 一页数据量
+     * @param page 分页信息
      * @param type 用户类型
      * @return 用户列表信息
      */
-    IPage<UserPo> listUserPoByDateBase(Page<UserPo> page, String type );
+    Page<UserPo> listUserPoByDateBase(Page<UserPo> page, String type );
 
 }

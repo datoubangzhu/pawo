@@ -14,15 +14,16 @@
     <parent>
         <groupId>iknow.u</groupId>
         <artifactId>pawo-server</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
 
     <artifactId>pawo-server-common</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
 
 
     <dependencies>
+        <!--   springboot自带依赖     -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -32,6 +33,13 @@
             <artifactId>spring-core</artifactId>
             <version>4.3.0.RELEASE</version>
         </dependency>
+        <!--  lombok 插件 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+
     </dependencies>
 
     

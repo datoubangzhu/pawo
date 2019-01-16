@@ -34,7 +34,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -48,7 +47,6 @@
         <module>pawo-power-service</module>
         <module>pawo-power-common</module>
         <module>pawo-power-dao</module>
-        <module>pawo-power-dubbo</module>
         <module>pawo-power-consumer</module>
     </modules>
 

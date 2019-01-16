@@ -12,7 +12,7 @@
 
     <groupId>iknow.u</groupId>
     <artifactId>pawo-server</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
 
     <packaging>pom</packaging>
@@ -45,8 +45,12 @@
 
 
     <modules>
-        <module>pawo-server-common</module>
         <module>pawo-server-app</module>
+        <module>pawo-server-common</module>
+        <module>pawo-server-dao</module>
+        <module>pawo-server-dubbo</module>
+        <module>pawo-server-service</module>
+        <module>pawo-server-web</module>
     </modules>
 
 

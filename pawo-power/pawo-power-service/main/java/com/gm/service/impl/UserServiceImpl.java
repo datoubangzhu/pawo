@@ -65,7 +65,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,SysUser> implements 
     }
 
     @Override
-    public IPage<UserPo> listUserPoByDateBase( Page<UserPo> page ,String type) {
-        return baseMapper.listByName(page,type);
+    public Page<UserPo> listUserPoByDateBase(Page<UserPo> page ,String type) {
+        List<UserPo> userPos = baseMapper.listByName(page,type);
+        Page<UserPo> userPoPage = new Page<>();
+        userPoPage.setRecords(userPos);
+        userPoPage.setCurrent(page.getCurrent());
+        userPoPage.setSize(page.getSize());
+        userPoPage.setTotal(page.getTotal());
+        return userPoPage;
     }
 }

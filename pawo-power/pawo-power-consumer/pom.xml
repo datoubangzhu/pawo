@@ -16,11 +16,17 @@
 
 
     <dependencies>
+        <!-- dubbo接口基础类依赖   -->
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-common-basic</artifactId>
+            <version>0.0.1</version>
+        </dependency>
         <!-- Spring Boot Dubbo 依赖 -->
         <dependency>
-            <groupId>io.dubbo.springboot</groupId>
-            <artifactId>spring-boot-starter-dubbo</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.1.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
@@ -36,6 +42,16 @@
                     <artifactId>log4j</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-autoconfigure</artifactId>
+            <version>0.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.2</version>
         </dependency>
     </dependencies>
 

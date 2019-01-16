@@ -32,8 +32,9 @@ spring:
       name: provider #服务名称
     registry:
       address: zookeeper://127.0.0.1:2181 #注册中心地址
-    protocol.name: dubbo #dubbo 协议
-    protocol.port: 20080
+    protocol:
+      name: consumer #dubbo 协议
+      port: 5005
     scan: com.gm.dubbo.service #声明需要暴露的服务接口
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*/*Mapper.xml

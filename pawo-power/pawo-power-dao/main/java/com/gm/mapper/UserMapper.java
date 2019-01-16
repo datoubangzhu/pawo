@@ -13,6 +13,8 @@ import com.gm.entity.SysUser;
 import com.gm.po.UserPo;
 import org.springframework.data.repository.query.Param;
 
+import java.util.List;
+
 /**
  * <p> </p>
  *
@@ -33,6 +35,6 @@ public interface UserMapper extends BaseMapper<SysUser> {
      * @param type 类型
      * @return 用户信息
      */
-    IPage<UserPo> listByName(Page page,
-                             @Param("type") String type);
+    List<UserPo> listByName(Page page,
+                            @Param("type") String type);
 }

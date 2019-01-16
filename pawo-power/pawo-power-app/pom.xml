@@ -13,7 +13,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>1.5.12.RELEASE</version>
+        <version>1.5.12.RELEASE</version>
         </dependency>
         <!-- 依赖其他模块，就可以扫描到其他模块的包   -->
         <dependency>

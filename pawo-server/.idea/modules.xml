@@ -5,6 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/pawo-server.iml" filepath="$PROJECT_DIR$/pawo-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/pawo-server-app/pawo-server-app.iml" filepath="$PROJECT_DIR$/pawo-server-app/pawo-server-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pawo-server-common/pawo-server-common.iml" filepath="$PROJECT_DIR$/pawo-server-common/pawo-server-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pawo-server-dao/pawo-server-dao.iml" filepath="$PROJECT_DIR$/pawo-server-dao/pawo-server-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pawo-server-dubbo/pawo-server-dubbo.iml" filepath="$PROJECT_DIR$/pawo-server-dubbo/pawo-server-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pawo-server-service/pawo-server-service.iml" filepath="$PROJECT_DIR$/pawo-server-service/pawo-server-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pawo-server-web/pawo-server-web.iml" filepath="$PROJECT_DIR$/pawo-server-web/pawo-server-web.iml" />
     </modules>
   </component>
 </project>

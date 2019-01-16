@@ -10,7 +10,6 @@
         <module name="pawo-power-common" />
         <module name="pawo-power-consumer" />
         <module name="pawo-power-dao" />
-        <module name="pawo-power-dubbo" />
         <module name="pawo-power-service" />
         <module name="pawo-power-web" />
       </profile>
@@ -23,7 +22,7 @@
       <module name="pawo-power-dao" target="1.7" />
       <module name="pawo-power-dubbo" target="1.7" />
       <module name="pawo-power-service" target="1.7" />
-      <module name="pawo-power-web" target="1.7" />
+      <module name="pawo-power-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

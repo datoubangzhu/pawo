@@ -8,12 +8,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="pawo-server-app" />
         <module name="pawo-server-common" />
+        <module name="pawo-server-dao" />
+        <module name="pawo-server-dubbo" />
+        <module name="pawo-server-service" />
+        <module name="pawo-server-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="pawo-server" target="1.7" />
       <module name="pawo-server-app" target="1.7" />
       <module name="pawo-server-common" target="1.7" />
+      <module name="pawo-server-dao" target="1.7" />
+      <module name="pawo-server-dubbo" target="1.7" />
+      <module name="pawo-server-service" target="1.7" />
+      <module name="pawo-server-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
