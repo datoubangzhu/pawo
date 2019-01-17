@@ -11,7 +11,7 @@ import com.gm.user.ShoppingOrders;
 import com.gm.user.ShoppingOrdersRequest;
 
 /**
- * <p> </p>
+ * <p> 订单处理服务接口</p>
  *
  * <pre> Created: 2019-01-16 22:46  </pre>
  * <pre> Project: pawo-common  </pre>

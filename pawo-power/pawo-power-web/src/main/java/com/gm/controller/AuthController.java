@@ -1,7 +1,7 @@
 package com.gm.controller;
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2019. gmzhao.
+ * Copyright (c) 2012-2019. 赵贵明.
  * pawo-power All rights reserved.
  */
 
@@ -11,6 +11,8 @@ import com.google.common.collect.Lists;
 
 import com.baomidou.mybatisplus.plugins.Page;
 import com.gm.dubbo.impl.DubboService;
+import com.gm.error.PawoError;
+import com.gm.exception.PawoException;
 import com.gm.po.UserPo;
 import com.gm.request.UserRequest;
 import com.gm.service.IUserService;
@@ -82,7 +84,7 @@ public class AuthController {
         if(valid){
             return ResponseEntity.ok("登录成功");
         }else{
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("登录失败");
+            throw new PawoException("用户信息错误", PawoError.AUTH_FAILURE.getCode());
         }
     }
 
@@ -148,6 +150,11 @@ public class AuthController {
     }
 
 
+    /**
+     * dubbo测试，从rpc获取用户信息
+     *
+     * @return 用户信息
+     */
     @GetMapping("dubbo")
     public @ResponseBody ResponseEntity dubboTest(){
         String resulte = dubboService.getDubboUser();
