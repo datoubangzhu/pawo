@@ -1,6 +1,6 @@
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2019. haiyi Inc.
+ * Copyright (c) 2012-2019. 赵贵明 Inc.
  * pawo-common All rights reserved.
  */
 

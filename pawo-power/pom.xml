@@ -51,7 +51,7 @@
 
     <repositories>
         <repository>
-            <id>haiyi</id>
+            <id>赵贵明</id>
             <url>http://127.0.0.1:8081/repository/maven-public/</url>
             <snapshots>
                 <enabled>true</enabled>
