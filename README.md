@@ -29,4 +29,5 @@ pawo-server-dubbo dubbo服务模块，提供rpc接口实现类，处理抢单逻
 pawo-common-basic 提供基础rpc公共接口，包括抢单接口等
 ```
 
-
+#### 其他实现支持：
+- 全局异常处理
