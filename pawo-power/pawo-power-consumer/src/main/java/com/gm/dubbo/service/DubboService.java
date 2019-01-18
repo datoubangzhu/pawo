@@ -1,4 +1,4 @@
-package com.gm.dubbo.impl;
+package com.gm.dubbo.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.gm.user.DubboUserPo;

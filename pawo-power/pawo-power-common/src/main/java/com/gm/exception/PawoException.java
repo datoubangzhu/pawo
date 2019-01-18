@@ -5,7 +5,6 @@
  */
 
 package com.gm.exception;
-
 /**
  * <p> 异常信息扩展 </p>
  *
@@ -31,8 +30,8 @@ public class PawoException extends RuntimeException {
     private final Object ext;
 
 
-
     public PawoException(int errorCode){
+        super();
         this.errorCode = errorCode;
         this.ext = null;
     }

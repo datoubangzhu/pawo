@@ -21,7 +21,7 @@
       <module name="pawo-power-consumer" target="1.7" />
       <module name="pawo-power-dao" target="1.7" />
       <module name="pawo-power-service" target="1.7" />
-      <module name="pawo-power-web" target="1.8" />
+      <module name="pawo-power-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

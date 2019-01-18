@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@DubboComponentScan(basePackages = "com.gm.dubbo.service.impl")
+@DubboComponentScan(basePackages = "com.gm.dubbo.service")
 public class DubboConfig {
 
 

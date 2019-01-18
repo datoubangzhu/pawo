@@ -6,7 +6,7 @@
 
 package com.gm.controller;
 
-import com.gm.dubbo.impl.OrderService;
+import com.gm.dubbo.service.OrderService;
 import com.gm.user.ShoppingOrdersRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;

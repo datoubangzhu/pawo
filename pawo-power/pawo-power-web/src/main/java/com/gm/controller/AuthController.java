@@ -10,9 +10,7 @@ import com.google.common.base.MoreObjects;
 import com.google.common.collect.Lists;
 
 import com.baomidou.mybatisplus.plugins.Page;
-import com.gm.dubbo.impl.DubboService;
-import com.gm.error.PawoError;
-import com.gm.exception.PawoException;
+import com.gm.dubbo.service.DubboService;
 import com.gm.po.UserPo;
 import com.gm.request.UserRequest;
 import com.gm.service.IUserService;
@@ -84,7 +82,8 @@ public class AuthController {
         if(valid){
             return ResponseEntity.ok("登录成功");
         }else{
-            throw new PawoException("用户信息错误", PawoError.AUTH_FAILURE.getCode());
+//            throw new PawoException("用户信息错误", PawoError.AUTH_FAILURE.getCode());
+            return  null;
         }
     }
 
@@ -128,7 +127,11 @@ public class AuthController {
     public @ResponseBody ResponseEntity list(){
         List<Object> userPoList = hashOperations.values(USER_KEY);
         List<UserPo> userPos = Lists.newArrayList();
-        userPoList.forEach(user-> userPos.add((UserPo) user));
+
+        //userPoList.forEach(user-> userPos.add((UserPo) user));
+        for(Object obj:userPoList){
+            userPos.add((UserPo)obj);
+        }
         return ResponseEntity.ok(userPos);
     }
 

@@ -44,14 +44,12 @@
         <module>pawo-power-common</module>
         <module>pawo-power-dao</module>
         <module>pawo-power-consumer</module>
-    <module>pawo-test</module>
-    <module>pawo-test2</module>
   </modules>
 
 
     <repositories>
         <repository>
-            <id>赵贵明</id>
+            <id>test</id>
             <url>http://127.0.0.1:8081/repository/maven-public/</url>
             <snapshots>
                 <enabled>true</enabled>
@@ -75,8 +73,4 @@
             <url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-
-
-
-
 </project>

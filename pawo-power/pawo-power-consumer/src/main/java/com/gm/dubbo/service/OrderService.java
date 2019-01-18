@@ -4,7 +4,7 @@
  * pawo-power All rights reserved.
  */
 
-package com.gm.dubbo.impl;
+package com.gm.dubbo.service;
 
 import com.gm.user.ShoppingOrdersRequest;
 import com.gm.user.service.IDubboOrderService;

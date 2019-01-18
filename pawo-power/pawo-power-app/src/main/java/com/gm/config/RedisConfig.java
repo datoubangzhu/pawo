@@ -5,20 +5,18 @@ package com.gm.config;/*
  */
 
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
-
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
- * <p> </p>
+ * <p> redis 配置</p>
  *
  * <pre> Created: 2018-12-10 15:29  </pre>
  * <pre> Project: pawo-power  </pre>

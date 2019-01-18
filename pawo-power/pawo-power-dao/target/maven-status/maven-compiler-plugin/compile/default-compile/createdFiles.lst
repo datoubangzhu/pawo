@@ -1,0 +1,4 @@
+com\gm\po\UserPo.class
+com\gm\mapper\UserMapper.class
+com\gm\request\UserRequest.class
+com\gm\entity\SysUser.class

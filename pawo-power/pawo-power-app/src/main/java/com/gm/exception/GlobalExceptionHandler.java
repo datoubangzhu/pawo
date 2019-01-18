@@ -8,16 +8,21 @@ package com.gm.exception;
 
 import com.gm.error.ResponseBodyBasic;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+import java.io.Serializable;
+
+import jdk.nashorn.internal.objects.Global;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * <p> </p>
+ * <p> 全局异常处理 </p>
  *
  * <pre> Created: 2019-01-17 14:25  </pre>
  * <pre> Project: pawo-power  </pre>
@@ -28,8 +33,11 @@ import lombok.extern.slf4j.Slf4j;
  */
 @ControllerAdvice
 @Slf4j
-public class GlobalExceptionHandler {
+public class GlobalExceptionHandler implements Serializable{
 
+    private static final long serialVersionUID = 1128323742689049714L;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     /**
      * 自定义异常处理
@@ -41,7 +49,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = PawoException.class)
     @ResponseBody
     public ResponseBodyBasic basic(PawoException e){
-        log.error("pawo has exception! {}",e);
+        LOGGER.error("pawo has exception! {}",e);
         return ResponseBodyBasic.builder()
                 .code(e.getErrorCode())
                 .message(e.getMessage()).build();
@@ -58,12 +66,10 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public ResponseBodyBasic basic(Exception e){
-        log.error("pawo has exception! {}",e);
+        LOGGER.error("pawo has exception! {}",e);
         return ResponseBodyBasic.builder()
                 .code(HttpStatus.BAD_REQUEST.value())
                 .message(e.getMessage()).build();
     }
-
-
 
 }
