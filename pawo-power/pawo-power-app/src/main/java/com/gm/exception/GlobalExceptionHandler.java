@@ -6,7 +6,8 @@
 
 package com.gm.exception;
 
-import com.gm.error.ResponseBodyBasic;
+import com.constant.error.PawoError;
+import com.constant.error.ResponseBodyBasic;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,9 +18,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.io.Serializable;
+import java.util.Set;
 
-import jdk.nashorn.internal.objects.Global;
 import lombok.extern.slf4j.Slf4j;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
 
 /**
  * <p> 全局异常处理 </p>
@@ -70,6 +74,24 @@ public class GlobalExceptionHandler implements Serializable{
         return ResponseBodyBasic.builder()
                 .code(HttpStatus.BAD_REQUEST.value())
                 .message(e.getMessage()).build();
+    }
+
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(value = ConstraintViolationException.class)
+    @ResponseBody
+    public ResponseBodyBasic basic(ConstraintViolationException e){
+        Set<ConstraintViolation<?>> set = e.getConstraintViolations();
+        StringBuilder message = new StringBuilder();
+        for(ConstraintViolation constraintViolation : set){
+            String value = constraintViolation.getMessage();
+                message.append(value);
+        }
+        ResponseBodyBasic responseBodyBasic = ResponseBodyBasic.builder()
+                .code(PawoError.USER_CREATE_FAILURE.getCode())
+                .message("参数校验失败: "+ message).build();
+        log.error("参数校验失败----------"+ message);
+        return responseBodyBasic;
     }
 
 }

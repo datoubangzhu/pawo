@@ -9,8 +9,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-
     <parent>
         <groupId>iknow.u</groupId>
         <artifactId>pawo-power</artifactId>
@@ -27,7 +25,18 @@
             <artifactId>pawo-power-common</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-power-consumer</artifactId>
+            <version>0.0.1</version>
+        </dependency>
 
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.6</version>
+        </dependency>
     </dependencies>
 
 

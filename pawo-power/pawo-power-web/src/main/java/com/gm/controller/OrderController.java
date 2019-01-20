@@ -6,15 +6,18 @@
 
 package com.gm.controller;
 
-import com.gm.dubbo.service.OrderService;
+import com.gm.dubbo.service.RpcOrderService;
+import com.gm.request.OrderRequest;
+import com.gm.service.IOrderService;
 import com.gm.user.ShoppingOrdersRequest;
 
+import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * <p> </p>
+ * <p> 下单控制层 </p>
  *
  * <pre> Created: 2019-01-16 22:24  </pre>
  * <pre> Project: pawo-power  </pre>
@@ -28,20 +31,40 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
 
-    private final OrderService orderService;
+    private final RpcOrderService rpcOrderService;
+    private final IOrderService orderService;
+    private final MapperFacade mapperFacade;
 
 
     @Autowired
-    public OrderController(OrderService orderService) {
+    public OrderController(RpcOrderService rpcOrderService,
+                           IOrderService orderService,
+                           MapperFacade mapperFacade) {
         this.orderService = orderService;
+        this.mapperFacade = mapperFacade;
+        this.rpcOrderService = rpcOrderService;
     }
 
 
+    /**
+     * 下单
+     *
+     * @param shoppingOrder 订单信息
+     */
+    @RequestMapping("submit")
+    public void handleOrder(ShoppingOrdersRequest shoppingOrder){
+        orderService.submit(shoppingOrder);
+    }
+
+
+
+    /**
+     * 抢单下单
+     *
+     * @param shoppingOrder 订单信息
+     */
     @RequestMapping("submit/fast")
-    public void handleOrder(){
-        ShoppingOrdersRequest ordersRequest = new ShoppingOrdersRequest();
-        ordersRequest.setSn("201901160000000001");
-        ordersRequest.setGoodsCode("Diro");
-        orderService.fastSubmit(ordersRequest);
+    public void handleOrderFast(ShoppingOrdersRequest orderRequest){
+        rpcOrderService.fastSubmit(orderRequest);
     }
 }

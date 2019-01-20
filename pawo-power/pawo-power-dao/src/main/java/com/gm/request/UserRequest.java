@@ -7,17 +7,14 @@
 package com.gm.request;
 
 
+import cn.hutool.core.date.DatePattern;
+import lombok.Data;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
-
-
-import javax.validation.constraints.NotNull;
-
-import cn.hutool.core.date.DatePattern;
-import lombok.Data;
 
 /**
  * <p> 用户信息类 </p>
@@ -36,7 +33,7 @@ public class UserRequest implements Serializable {
     /**
      * 用户名
      */
-    @NotBlank
+    @NotBlank(message =  "姓名不得为空")
     private String  username;
     /**
      * 密码
@@ -52,5 +49,7 @@ public class UserRequest implements Serializable {
      * 创建时间————————————————————//为何不生效
      */
     @DateTimeFormat(pattern = DatePattern.NORM_DATETIME_PATTERN)
-    private Date    date;
+//    @DateTimeFormat(pattern = DatePattern.NORM_DATE_PATTERN)
+//    @JsonFormat(pattern = DatePattern.NORM_DATETIME_PATTERN,timezone = "GMT+8")
+    private Date date;
 }

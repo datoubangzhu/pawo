@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gm.mapper.GoodOrderMapper">
+    <select id="selectForUpdate" resultType="com.gm.user.GoodsOrders">
+        select IID,SELLER_SN,GOODS_NAME,GOODS_CODE,GOODS_TYPE,PRICE,VOLUME_TOTAL,VOLUME_TRADED
+        FROM GOODS_ORDERS WHERE SELLER_SN = #{sellerSn} AND GOODS_CODE= #{goodsCode}
+    </select>
+</mapper>

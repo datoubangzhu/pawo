@@ -6,8 +6,8 @@ package com.gm.controller;
  */
 
 
-import com.google.common.base.MoreObjects;
-import com.google.common.collect.Lists;
+import com.constant.error.PawoError;
+import com.gm.exception.PawoException;
 
 import com.baomidou.mybatisplus.plugins.Page;
 import com.gm.dubbo.service.DubboService;
@@ -15,13 +15,13 @@ import com.gm.po.UserPo;
 import com.gm.request.UserRequest;
 import com.gm.service.IUserService;
 
-import org.mindrot.jbcrypt.BCrypt;
+import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,13 +29,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
-
-import cn.hutool.core.date.DatePattern;
-import cn.hutool.core.date.DateUtil;
 
 
 /**
@@ -49,14 +45,17 @@ import cn.hutool.core.date.DateUtil;
  * @since JDK 1.7
  */
 @Controller
+@Validated
 @RequestMapping("pawo/user")
 public class AuthController {
+
+    private final static String USER_KEY = "pawo:auth:user";
 
     private IUserService                         userService;
     private HashOperations<String,Object,Object> hashOperations;
     private DubboService                         dubboService;
 
-    private final static String USER_KEY = "pawo:auth:user";
+
 
     @Autowired
     public AuthController(RedisTemplate<String,Object> redisTemplate,IUserService userService,DubboService dubboService) {
@@ -76,14 +75,11 @@ public class AuthController {
     @GetMapping("login")
     public @ResponseBody ResponseEntity auth(@RequestParam("username")String username,
                                              @RequestParam("password")String userPassword){
-        UserRequest user = (UserRequest)hashOperations.get(USER_KEY,username);
-        String password = user.getPassword();
-        boolean valid = BCrypt.checkpw(password,userPassword);
+        boolean valid = userService.login(username,userPassword);
         if(valid){
             return ResponseEntity.ok("登录成功");
         }else{
-//            throw new PawoException("用户信息错误", PawoError.AUTH_FAILURE.getCode());
-            return  null;
+            throw new PawoException("用户信息错误", PawoError.AUTH_FAILURE.getCode());
         }
     }
 
@@ -96,24 +92,21 @@ public class AuthController {
      */
     @PostMapping("create")
     public ResponseEntity create(@RequestBody @Valid UserRequest userRequest){
-        String userName = userRequest.getUsername();
-        Object object = hashOperations.get(USER_KEY,userName);
-        if(object!=null){
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("用户已存在");
-        }
-        String password = userRequest.getPassword();
-        String hashPassWord = BCrypt.hashpw(password,BCrypt.gensalt());
-        final Date createDate = userRequest.getDate();
-        final Date currentDateTime = DateUtil.date();
-        final Date date =  MoreObjects.firstNonNull(createDate,currentDateTime);
-        final String creatTime = DateUtil.format(date,DatePattern.PURE_DATE_PATTERN);
+        List<UserRequest> userRequests = Lists.newArrayList(userRequest);
+        userService.createUsers(userRequests);
+        return ResponseEntity.ok("创建成功");
+    }
 
-        UserPo userPo = new UserPo();
-        userPo.setUsername(userRequest.getUsername());
-        userPo.setPassword(hashPassWord);
-        userPo.setType(userRequest.getType());
-        userPo.setCreateTime(creatTime);
-        hashOperations.put(USER_KEY,userName,userPo);
+
+    /**
+     * 批量创建用户
+     *
+     * @param userRequest 用户信息
+     * @return 创建结果
+     */
+    @PostMapping("create/list")
+    public ResponseEntity create(@RequestBody @Valid List<UserRequest> userRequest){
+        userService.createUsers(userRequest);
         return ResponseEntity.ok("创建成功");
     }
 
@@ -125,14 +118,8 @@ public class AuthController {
      */
     @GetMapping("list")
     public @ResponseBody ResponseEntity list(){
-        List<Object> userPoList = hashOperations.values(USER_KEY);
-        List<UserPo> userPos = Lists.newArrayList();
-
-        //userPoList.forEach(user-> userPos.add((UserPo) user));
-        for(Object obj:userPoList){
-            userPos.add((UserPo)obj);
-        }
-        return ResponseEntity.ok(userPos);
+        List<UserPo> userPoList = userService.listUserPoByCache();
+        return ResponseEntity.ok(userPoList);
     }
 
 

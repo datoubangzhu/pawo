@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gm.mapper.OrderMapper">
+    <resultMap id="BaseResultMap" type="com.gm.user.ShoppingOrders">
+        <id column="IID" property="iid"/>
+        <result column="SN" property="sn" />
+        <result column="PARENT_SN" property="parentSn" />
+        <result column="ORDER_TYPE" property="orderType" />
+        <result column="TRANSACTION_TYPE" property="transactionType" />
+        <result column="GOODS_CODE" property="goodsCode" />
+        <result column="PRICE" property="price" />
+        <result column="VOLUME" property="volume" />
+        <result column="VOLUME_TOTAL" property="volumeTotal" />
+        <result column="VOLUME_TRADED" property="volumeTraded" />
+        <result column="ORDER_STATUS" property="orderStatus" />
+        <result column="STATUS_MSG" property="statusMsg" />
+        <result column="INSERT_TIME" property="insertTime" />
+        <result column="USER_ID" property="userId" />
+        <result column="USER_NAME" property="userName" />
+    </resultMap>
+    <select id="selectForUpdateBySn" resultType="com.gm.user.ShoppingOrders">
+        select SN,PARENT_SN,ORDER_TYPE,TRANSACTION_TYPE,GOODS_CODE,PRICE,VOLUME,VOLUME_TOTAL,VOLUME_TRADED,ORDER_STATUS
+        USER_NAME
+        WHERE SN = #{sn} for update
+    </select>
+</mapper>

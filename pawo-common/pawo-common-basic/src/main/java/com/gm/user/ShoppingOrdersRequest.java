@@ -31,17 +31,13 @@ public class ShoppingOrdersRequest implements Serializable {
      */
     private String  sn;
     /**
-     * 关联父订单SN
-     */
-    private String  parentSn;
-    /**
-     * 订单商品类型代码
-     */
-    private String  orderTypeCode;
-    /**
      * 下单类型（秒杀/下单）
      */
     private Integer transactionType;
+    /**
+     * 卖家编号
+     */
+    private String  sellerSn;
     /**
      * 商品编号
      */
@@ -54,14 +50,6 @@ public class ShoppingOrdersRequest implements Serializable {
      * 下单数量
      */
     private Integer volume;
-    /**
-     * 剩余数量
-     */
-    private Integer volumeTotal;
-    /**
-     * 已交易数量
-     */
-    private Integer volumeTraded;
     /**
      * 订单状态
      */

@@ -1,5 +1,8 @@
-com\gm\user\ShoppingOrdersRequest.class
-com\gm\user\service\IDubboUserService.class
-com\gm\user\service\IDubboOrderService.class
-com\gm\user\ShoppingOrders.class
 com\gm\user\DubboUserPo.class
+com\gm\user\ShoppingOrders.class
+com\gm\user\service\IDubboUserService.class
+com\gm\user\ShoppingOrdersRequest.class
+com\gm\user\ShoppingOrderVo.class
+com\gm\user\GoodsOrders.class
+com\gm\user\GoodsStatus.class
+com\gm\user\service\IDubboOrderService.class
