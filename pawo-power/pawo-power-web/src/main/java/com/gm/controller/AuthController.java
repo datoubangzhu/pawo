@@ -6,10 +6,9 @@ package com.gm.controller;
  */
 
 
-import com.constant.error.PawoError;
-import com.gm.exception.PawoException;
-
 import com.baomidou.mybatisplus.plugins.Page;
+import com.gm.config.exception.PawoError;
+import com.gm.config.exception.PawoException;
 import com.gm.dubbo.service.DubboService;
 import com.gm.po.UserPo;
 import com.gm.request.UserRequest;

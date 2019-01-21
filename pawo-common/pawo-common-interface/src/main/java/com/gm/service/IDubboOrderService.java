@@ -8,6 +8,7 @@ package com.gm.service;
 
 
 import com.baomidou.mybatisplus.service.IService;
+import com.gm.order.ShoppingOrderVo;
 import com.gm.order.ShoppingOrders;
 import com.gm.order.ShoppingOrdersRequest;
 
@@ -30,6 +31,6 @@ public interface IDubboOrderService extends IService<ShoppingOrders> {
      * @param ordersRequest 订单请求信息
      * @return 是否抢单成功
      */
-    boolean fastSubmit(ShoppingOrdersRequest ordersRequest);
+    ShoppingOrderVo fastSubmit(ShoppingOrdersRequest ordersRequest);
 
 }

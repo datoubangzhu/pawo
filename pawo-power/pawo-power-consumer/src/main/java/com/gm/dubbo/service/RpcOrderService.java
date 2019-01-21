@@ -8,6 +8,7 @@ package com.gm.dubbo.service;
 
 import org.springframework.stereotype.Component;
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.gm.order.ShoppingOrderVo;
 import com.gm.order.ShoppingOrdersRequest;
 import com.gm.service.IDubboOrderService;
 
@@ -33,8 +34,8 @@ public class RpcOrderService {
      *
      * @param ordersRequest 请求信息
      */
-    public void fastSubmit(ShoppingOrdersRequest ordersRequest){
-        dubboOrderService.fastSubmit(ordersRequest);
+    public ShoppingOrderVo fastSubmit(ShoppingOrdersRequest ordersRequest){
+       return dubboOrderService.fastSubmit(ordersRequest);
     }
 
 }

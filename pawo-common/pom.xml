@@ -39,7 +39,7 @@
 
 
 	<modules>
-		<module>pawo-common-app</module>
+		<module>pawo-common-config</module>
 		<module>pawo-common-basic</module>
         <module>pawo-common-interface</module>
   </modules>

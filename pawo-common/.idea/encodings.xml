@@ -2,8 +2,8 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/pawo-common-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pawo-common-basic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pawo-common-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pawo-common-interface" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

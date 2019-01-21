@@ -26,6 +26,9 @@
     <orderEntry type="module" module-name="pawo-server-common" />
     <orderEntry type="library" name="Maven: iknow.u:pawo-common-basic:0.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-support:2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:4.0.9" level="project" />
+    <orderEntry type="library" name="Maven: iknow.u:pawo-common-interface:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: iknow.u:pawo-common-config:0.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:1.5.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:1.8.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:1.2.11.RELEASE" level="project" />

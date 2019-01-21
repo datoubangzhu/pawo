@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pawo-common-app" />
         <module name="pawo-common-basic" />
+        <module name="pawo-common-config" />
         <module name="pawo-common-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="pawo-common" target="1.7" />
-      <module name="pawo-common-app" target="1.7" />
       <module name="pawo-common-basic" target="1.7" />
+      <module name="pawo-common-config" target="1.7" />
       <module name="pawo-common-interface" target="1.7" />
     </bytecodeTargetLevel>
   </component>

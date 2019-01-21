@@ -6,8 +6,9 @@
 
 package com.gm.exception;
 
-import com.constant.error.PawoError;
 import com.constant.error.ResponseBodyBasic;
+import com.gm.config.exception.PawoError;
+import com.gm.config.exception.PawoException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

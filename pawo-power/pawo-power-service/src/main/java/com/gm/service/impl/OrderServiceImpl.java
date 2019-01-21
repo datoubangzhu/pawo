@@ -2,8 +2,8 @@ package com.gm.service.impl;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.constant.error.PawoError;
-import com.gm.exception.PawoException;
+import com.gm.config.exception.PawoError;
+import com.gm.config.exception.PawoException;
 import com.gm.goods.GoodsOrders;
 import com.gm.goods.GoodsStatus;
 import com.gm.mapper.OrderMapper;
@@ -12,7 +12,6 @@ import com.gm.order.ShoppingOrders;
 import com.gm.order.ShoppingOrdersRequest;
 import com.gm.service.IGoodsOrderService;
 import com.gm.service.IOrderService;
-import com.gm.user.*;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,7 +49,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> im
         final int volumeTraded = goodsOrders.getVolumeTraded();
         final Integer volume = shoppingOrder.getVolume();
         if(volume<=0){
-            throw new PawoException("宝贝已经没有了！",PawoError.AUTH_FAILURE.getCode());
+            throw new PawoException("宝贝已经没有了！", PawoError.AUTH_FAILURE.getCode());
         }
         final int newTraded = volume + volumeTraded;
         goodsOrders.setVolumeTraded(newTraded);

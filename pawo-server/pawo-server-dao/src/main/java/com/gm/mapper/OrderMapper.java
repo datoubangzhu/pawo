@@ -6,8 +6,9 @@
 
 package com.gm.mapper;
 
+
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.gm.user.ShoppingOrders;
+import com.gm.order.ShoppingOrders;
 
 /**
  * <p> 订单表mapper </p>
@@ -19,5 +20,6 @@ import com.gm.user.ShoppingOrders;
  * @version 1.0
  * @since JDK 1.7
  */
-public interface OrderMapper extends BaseMapper<ShoppingOrders>{
+public interface OrderMapper extends BaseMapper<ShoppingOrders> {
+
 }

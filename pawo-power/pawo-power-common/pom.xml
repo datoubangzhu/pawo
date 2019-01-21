@@ -10,6 +10,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <dependencies>
+
+        <!-- dubbo接口基础类依赖   -->
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-common-basic</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-common-interface</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-common-config</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <!--单元测试依赖-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>

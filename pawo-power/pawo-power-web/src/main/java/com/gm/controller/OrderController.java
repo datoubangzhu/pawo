@@ -65,8 +65,8 @@ public class OrderController {
      */
     @RequestMapping("submit/fast")
     public ResponseEntity<ShoppingOrderVo> handleOrderFast(ShoppingOrdersRequest shoppingOrder){
-        rpcOrderService.fastSubmit(shoppingOrder);
-        return (ResponseEntity<ShoppingOrderVo>) ResponseEntity.ok();
+        ShoppingOrderVo shoppingOrderVo = rpcOrderService.fastSubmit(shoppingOrder);
+        return  ResponseEntity.ok(shoppingOrderVo);
 
     }
 }

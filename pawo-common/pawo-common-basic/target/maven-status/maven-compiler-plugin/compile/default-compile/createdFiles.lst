@@ -1,6 +1,7 @@
 com\gm\order\ShoppingOrderVo.class
 com\gm\goods\GoodsOrders.class
 com\gm\order\ShoppingOrders.class
+com\gm\util\OrderUtil.class
 com\gm\user\DubboUserPo.class
 com\gm\order\ShoppingOrdersRequest.class
 com\gm\goods\GoodsStatus.class
