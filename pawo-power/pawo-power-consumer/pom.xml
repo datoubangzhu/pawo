@@ -28,6 +28,11 @@
             <artifactId>pawo-common-basic</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-common-interface</artifactId>
+            <version>0.0.1</version>
+        </dependency>
         <!-- Spring Boot Dubbo 依赖 -->
         <dependency>
             <groupId>com.alibaba.boot</groupId>

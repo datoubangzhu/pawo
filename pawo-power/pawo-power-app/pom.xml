@@ -9,6 +9,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>iknow.u</groupId>
+        <artifactId>pawo-power</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <artifactId>pawo-power-app</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -19,6 +31,11 @@
         <dependency>
             <groupId>iknow.u</groupId>
             <artifactId>pawo-power-common</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>iknow.u</groupId>
+            <artifactId>pawo-power-dao</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
@@ -36,22 +53,10 @@
             <artifactId>pawo-power-consumer</artifactId>
             <version>0.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>5.0.7.RELEASE</version>
-        </dependency>
     </dependencies>
 
 
-    <parent>
-        <groupId>iknow.u</groupId>
-        <artifactId>pawo-power</artifactId>
-        <version>0.0.1</version>
-    </parent>
 
-    <artifactId>pawo-power-app</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
 
     <!--<build>-->
         <!--<finalName>pawopower</finalName>-->

@@ -6,25 +6,30 @@
 
 package com.gm.service.impl;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
+import cn.hutool.core.date.DatePattern;
+import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.gm.entity.SysUser;
+import com.constant.error.PawoError;
+import com.gm.exception.PawoException;
 import com.gm.mapper.UserMapper;
+import com.gm.request.UserRequest;
+import com.google.common.base.MoreObjects;
 import com.google.common.collect.Lists;
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.gm.entity.SysUser;
-import com.gm.mapper.UserMapper;
 import com.gm.po.UserPo;
 import com.gm.service.IUserService;
 
+import com.google.common.collect.Maps;
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Component;
 
+import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -47,10 +52,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,SysUser> implements 
     private final static String USER_KEY = "pawo:auth:user";
 
     private HashOperations<String,Object,Object> hashOperations;
+    private RedisTemplate<String,Object>   redisTemplate;
 
     @Autowired
     public UserServiceImpl(RedisTemplate<String,Object> redisTemplate) {
         this.hashOperations = redisTemplate.opsForHash();
+        this.redisTemplate = redisTemplate;
     }
 
 
@@ -73,5 +80,61 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,SysUser> implements 
         userPoPage.setSize(page.getSize());
         userPoPage.setTotal(page.getTotal());
         return userPoPage;
+    }
+
+    @Override
+    public boolean login(String username,String userPassword) {
+        UserRequest user = (UserRequest)hashOperations.get(USER_KEY,username);
+        String password = user.getPassword();
+        BCrypt.checkpw(password,userPassword);
+        return false;
+    }
+
+    @Override
+    public boolean checkListExist(List<UserRequest> userRequests) {
+        boolean result = false;
+        List<Object> userList = hashOperations.values(USER_KEY);
+        Map<String,Object> userMap = Maps.newHashMap();
+        for(Object obj : userList){
+            UserPo userPo = (UserPo) obj;
+            userMap.put(userPo.getUsername(), userPo);
+        }
+        for(UserRequest userRequest:userRequests){
+            String userName = userRequest.getUsername();
+            Object obj = userMap.get(userName);
+            if(obj!=null){
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    private void createIntoCache(List<UserRequest> userRequests) {
+        for(UserRequest userRequest :userRequests){
+            //入库参数封装
+            final String userName = userRequest.getUsername();
+            final String password = userRequest.getPassword();
+            final String hashPassWord = BCrypt.hashpw(password, BCrypt.gensalt());
+            final Date createDate = userRequest.getDate();
+            final Date currentDateTime = DateUtil.date();
+            final Date date = MoreObjects.firstNonNull(createDate, currentDateTime);
+            final String creatTime = DateUtil.format(date, DatePattern.PURE_DATE_PATTERN);
+
+            UserPo userPo = new UserPo();
+            userPo.setUsername(userRequest.getUsername());
+            userPo.setPassword(hashPassWord);
+            userPo.setType(userRequest.getType());
+            userPo.setCreateTime(creatTime);
+            hashOperations.put(USER_KEY, userName, userPo);
+        }
+    }
+
+    @Override
+    public void createUsers(List<UserRequest> userRequests) {
+        final boolean exist = this.checkListExist(userRequests);
+        if(exist){
+            throw new PawoException("用户已存在!", PawoError.USER_CREATE_FAILURE.getCode());
+        }
+        this.createIntoCache(userRequests);
     }
 }

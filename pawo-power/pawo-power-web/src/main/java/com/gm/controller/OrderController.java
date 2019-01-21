@@ -6,15 +6,20 @@
 
 package com.gm.controller;
 
-import com.gm.dubbo.service.OrderService;
-import com.gm.user.ShoppingOrdersRequest;
+import com.gm.dubbo.service.RpcOrderService;
+import com.gm.order.ShoppingOrderVo;
+import com.gm.order.ShoppingOrdersRequest;
+import com.gm.service.IOrderService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import ma.glasnost.orika.MapperFacade;
+
 /**
- * <p> </p>
+ * <p> 下单控制层 </p>
  *
  * <pre> Created: 2019-01-16 22:24  </pre>
  * <pre> Project: pawo-power  </pre>
@@ -28,20 +33,40 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
 
-    private final OrderService orderService;
+    private final RpcOrderService rpcOrderService;
+    private final IOrderService orderService;
 
 
     @Autowired
-    public OrderController(OrderService orderService) {
+    public OrderController(RpcOrderService rpcOrderService,
+                           IOrderService orderService) {
         this.orderService = orderService;
+        this.rpcOrderService = rpcOrderService;
     }
 
 
+    /**
+     * 下单
+     *
+     * @param shoppingOrder 订单信息
+     */
+    @RequestMapping("submit")
+    public ResponseEntity<ShoppingOrderVo> handleOrder(ShoppingOrdersRequest shoppingOrder){
+        ShoppingOrderVo shoppingOrderVo =  orderService.submit(shoppingOrder);
+        return ResponseEntity.ok(shoppingOrderVo);
+    }
+
+
+
+    /**
+     * 抢单下单
+     *
+     * @param shoppingOrder 订单信息
+     */
     @RequestMapping("submit/fast")
-    public void handleOrder(){
-        ShoppingOrdersRequest ordersRequest = new ShoppingOrdersRequest();
-        ordersRequest.setSn("201901160000000001");
-        ordersRequest.setGoodsCode("Diro");
-        orderService.fastSubmit(ordersRequest);
+    public ResponseEntity<ShoppingOrderVo> handleOrderFast(ShoppingOrdersRequest shoppingOrder){
+        rpcOrderService.fastSubmit(shoppingOrder);
+        return (ResponseEntity<ShoppingOrderVo>) ResponseEntity.ok();
+
     }
 }

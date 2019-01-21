@@ -118,7 +118,7 @@ public class SysUser extends Model<SysUser>{
                 .add("username", username)
                 .add("password", password)
                 .add("type", type)
-                .add("createTime", createTime)
+                .add("com", createTime)
                 .add("deleteFlag", deleteFlag)
                 .toString();
     }

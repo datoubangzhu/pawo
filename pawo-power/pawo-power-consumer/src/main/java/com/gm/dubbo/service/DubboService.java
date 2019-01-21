@@ -1,8 +1,9 @@
 package com.gm.dubbo.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.gm.service.IDubboUserService;
 import com.gm.user.DubboUserPo;
-import com.gm.user.service.IDubboUserService;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

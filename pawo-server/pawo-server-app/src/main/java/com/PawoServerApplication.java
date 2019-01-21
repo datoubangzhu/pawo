@@ -24,3 +24,9 @@ public class PawoServerApplication {
         SpringApplication.run(PawoServerApplication.class,args);
     }
 }
+
+
+
+
+
+

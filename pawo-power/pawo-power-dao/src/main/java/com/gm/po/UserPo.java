@@ -6,16 +6,8 @@
 
 package com.gm.po;
 
-import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serializable;
-import java.util.Date;
 
-import javax.validation.constraints.NotNull;
-
-import cn.hutool.core.date.DatePattern;
-import lombok.Builder;
 import lombok.Data;
 
 /**

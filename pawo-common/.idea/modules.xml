@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pawo-common.iml" filepath="$PROJECT_DIR$/pawo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pawo-common-app/pawo-common-app.iml" filepath="$PROJECT_DIR$/pawo-common-app/pawo-common-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pawo-common-basic/pawo-common-basic.iml" filepath="$PROJECT_DIR$/pawo-common-basic/pawo-common-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pawo-common-interface/pawo-common-interface.iml" filepath="$PROJECT_DIR$/pawo-common-interface/pawo-common-interface.iml" />
+    </modules>
+  </component>
+</project>
