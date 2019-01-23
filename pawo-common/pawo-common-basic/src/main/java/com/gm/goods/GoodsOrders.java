@@ -13,6 +13,11 @@ import com.baomidou.mybatisplus.annotations.TableName;
 
 import java.io.Serializable;
 
+/**
+ * 商品订单
+ *
+ * @author gmzhao
+ */
 @TableName("GOODS_ORDER")
 public class GoodsOrders extends Model<GoodsOrders> {
     @TableId

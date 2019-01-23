@@ -6,44 +6,49 @@
 
 package com.gm.order;
 
+import com.gm.domain.TransactionTypeEnum;
+
 import lombok.Data;
 
+/**
+ * @author gmzhao
+ */
 @Data
 public class ShoppingOrderVo {
     /**
      * 订单编号
      */
-    private String sn;
+    private String              sn;
     /**
      * 下单类型（秒杀/下单）
      */
-    private Integer transactionType;
+    private TransactionTypeEnum transactionType;
     /**
      * 卖家编号
      */
-    private String  sellerSn;
+    private String              sellerSn;
     /**
      * 商品编号
      */
-    private String  goodsCode;
+    private String              goodsCode;
     /**
      * 下单价格
      */
-    private Double  price;
+    private Double              price;
     /**
      * 下单数量
      */
-    private Integer volume;
+    private Integer             volume;
     /**
      * 订单状态
      */
-    private String orderStatus;
+    private String              orderStatus;
     /**
      * 订单状态信息
      */
-    private String  statusMsg;
+    private String              statusMsg;
     /**
      * 下单时间
      */
-    private String  insertTime;
+    private String              insertTime;
 }

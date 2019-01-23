@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://E:/gmzhaoTradeRepo/i2-modular-basic/i2-basic-dao/src/main/java/com/haiyi/i2/basic/entity/Regedit.java" description="@KeySequence" line="20" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3e32382c-8859-4c61-8c07-4153d90fb889" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -17,81 +20,100 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pawo_power$ShoppingInitialization_test.coverage" NAME="ShoppingInitialization.test Coverage Results" MODIFIED="1548244013420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.gm.service.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PawoError.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/exception/PawoError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="135" column="51" lean-forward="false" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/AuthController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalExceptionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/exception/GlobalExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/resource/application.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="290">
+              <caret line="132" column="20" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-consumer/pom.xml">
+      <file leaf-file-name="RedisTemplate.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.11.RELEASE/spring-data-redis-1.8.11.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="223">
+              <caret line="792" column="39" lean-forward="false" selection-start-line="792" selection-start-column="20" selection-end-line="792" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderMapping.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/OrderMapping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RpcOrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/RpcOrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestBody.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.16.RELEASE/spring-web-4.3.16.RELEASE.jar!/org/springframework/web/bind/annotation/RequestBody.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/test/JobController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShoppingInitialization.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/ShoppingInitialization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IOrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/IOrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -100,35 +122,40 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pawo-power-common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="2740">
+              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponseBodyBasic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/error/ResponseBodyBasic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>&quot;admin&quot;</find>
+      <find>&quot;createTime&quot;:1548222735</find>
+      <find>&quot;goodsStatus&quot;:&quot;01&quot;</find>
+      <find>paramMap</find>
+      <find>file</find>
+      <find>8080</find>
+      <find>女装</find>
       <find>haiyi</find>
     </findStrings>
     <replaceStrings>
-      <replace>gmzhao</replace>
       <replace />
+      <replace>&quot;admin&quot;,</replace>
+      <replace>&quot;createTime&quot;:1548222735,</replace>
+      <replace>&quot;goodsStatus&quot;:&quot;01&quot;,</replace>
+      <replace>GIRL_CLOTH</replace>
+      <replace>gmzhao</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -138,11 +165,21 @@
         <option value="$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/PawoException.java" />
         <option value="$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/exception/PawoException.java" />
         <option value="$PROJECT_DIR$/pawo-power-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/pawo-power-common/pom.xml" />
-        <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/exception/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/mq/MqListener.java" />
+        <option value="$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/test/JobController.java" />
+        <option value="$PROJECT_DIR$/pawo-power-app/src/main/resource/application.yaml" />
+        <option value="$PROJECT_DIR$/pawo-power-service/src/main/resource/pawo_goods_init.txt" />
+        <option value="$PROJECT_DIR$/pawo-power-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/SystemRegist.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/SystemRegister.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/OrderMapping.java" />
+        <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/ShoppingInitialization.java" />
+        <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/IOrderService.java" />
+        <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java" />
       </list>
     </option>
   </component>
@@ -166,7 +203,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -214,15 +252,178 @@
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
               <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,13 +439,23 @@
     <property name="LombokPluginIS_VAL_Enabled" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pawo-server/pom.xml" />
+    <property name="last_opened_file_path" value="E:/gmzhaoTradeRepo/i2-ctp-trade/pom.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\gmzhaoExample\pawo\pawo-power\pawo-power-app\src\main" />
+      <recent name="E:\gmzhaoExample\pawo\pawo-power\pawo-power-app\src\main\java" />
+      <recent name="E:\gmzhaoExample\pawo\pawo-power\pawo-power-app\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\gmzhaoExample\pawo\pawo-power\pawo-power-service\src\main\resource" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -258,13 +469,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PawoApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="PawoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.gm.PawoApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pawo-power-app" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -279,6 +509,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="ShoppingInitialization.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gm.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="pawo-power-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gm.service" />
+      <option name="MAIN_CLASS_NAME" value="com.gm.service.ShoppingInitialization" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -316,6 +571,16 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.PawoApplication" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ShoppingInitialization.test" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.PawoApplication" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ShoppingInitialization.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -330,33 +595,66 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 05m 16s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 05m 49s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 08m 13s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 08m 21s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 08m 32s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 36m 00s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 37m 38s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 44m 20s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 45m 11s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 46m 54s.xml">
+      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36373508" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.4935275" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5830619" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.50647247" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36482084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -367,10 +665,99 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="45" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>redisTemplate.opsForHash().get(&quot;pawo:goods&quot;,&quot;006&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisTemplate.opsForHash().get(PAWO_GOODS,goodsCode);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(GoodsOrders)redisTemplate.opsForHash().get(PAWO_GOODS,goodsCode);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods:006&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods:003&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisTemplate.opsForValue().get(PAWO_GOODS);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(GoodsOrders)redisTemplate.opsForValue().get(PAWO_GOODS+goodsCode);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/error/ResponseBodyBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1100#1101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/resource/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/exception/PawoException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -389,75 +776,564 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-consumer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="420">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/error/ResponseBodyBasic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="860">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1100#1101#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
+        <state relative-caret-position="2100">
           <caret line="135" column="51" lean-forward="false" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/exception/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
+        <state relative-caret-position="1380">
           <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/job/JobExecute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="61" column="7" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/mq/MqListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="3" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.0.3/amqp-client-4.0.3.jar!/com/rabbitmq/client/ConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="518" column="22" lean-forward="false" selection-start-line="518" selection-start-column="22" selection-end-line="518" selection-end-column="22" />
+          <folding>
+            <marker date="1536585369470" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1536585369470" expanded="false" signature="143:1423" ph="..." />
+            <marker date="1536585369470" expanded="true" signature="3588:4022" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="4051:4062" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4079:4085" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4123:4134" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4151:4157" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="4218:4341" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="4367:4378" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4424:4430" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4465:4476" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4493:4499" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4532:4543" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4564:4570" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4616:4627" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4652:4658" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4691:4702" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4723:4729" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4775:4786" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4811:4817" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4853:4864" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4888:4894" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="4946:4957" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="4988:4994" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="5104:6449" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="6568:6616" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="6657:6844" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="6885:6896" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="6928:6934" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="6999:7010" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="7057:7063" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="7102:7113" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="7143:7149" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="7210:7221" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="7264:7270" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="7310:7321" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="7352:7358" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="7410:7610" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="7649:7660" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="7690:7696" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="7734:7745" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="7774:7780" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="7831:8025" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="8082:8093" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8132:8138" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8175:8186" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8214:8220" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8283:8294" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8339:8345" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8399:8410" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8440:8446" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8521:8532" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8574:8580" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8619:8630" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8653:8659" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8713:8724" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8753:8759" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8804:8815" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8835:8841" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8898:8909" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="8932:8938" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="8993:9004" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9027:9033" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="9111:9122" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9159:9165" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="9226:9237" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9268:9274" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="9337:9348" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9381:9387" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="9460:9471" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9505:9511" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="9556:9567" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9593:9599" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="9662:9673" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9708:9714" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="9765:9776" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="9805:9811" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="9884:10097" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="10125:10136" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="10195:10201" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="10292:10423" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="10529:10599" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="10732:10918" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="10971:11072" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="11154:11592" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="11641:11652" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="11682:11688" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="11760:11771" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="11814:11820" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="11868:11879" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="11908:11914" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="11984:11995" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="12036:12042" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="12114:12125" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="12166:12172" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="12223:12234" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="12263:12269" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="12365:13034" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="13126:13231" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="13339:13450" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="13569:13674" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="13770:13860" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="13983:14073" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="14191:14285" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="14430:14524" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="14646:14725" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="14859:14959" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="15108:15215" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="15376:17326" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="17408:18487" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="18621:18702" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="18779:18914" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="19012:19163" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="19264:19388" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="19512:19652" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="19731:19906" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="19945:20116" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="20162:20173" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="20209:20215" ph=" }" />
+            <marker date="1536585369470" expanded="true" signature="20289:20366" ph="{...}" />
+            <marker date="1536585369470" expanded="true" signature="20441:20512" ph="{...}" />
+            <marker date="1536585369470" expanded="false" signature="20563:20574" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="20601:20607" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="20633:20644" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="20660:20666" ph=" }" />
+            <marker date="1536585369470" expanded="false" signature="20699:20710" ph=" { " />
+            <marker date="1536585369470" expanded="false" signature="20727:20733" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/mq/MqProducterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="95" column="31" lean-forward="false" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="387" column="18" lean-forward="false" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/24.1-android/guava-24.1-android-sources.jar!/com/google/common/collect/Lists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="81" column="33" lean-forward="false" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+          <folding>
+            <element signature="e#3259#3260#0" expanded="false" />
+            <element signature="e#3293#3294#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1152" column="15" lean-forward="false" selection-start-line="1152" selection-start-column="15" selection-end-line="1152" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar!/org/slf4j/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="355" column="16" lean-forward="false" selection-start-line="355" selection-start-column="16" selection-end-line="355" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="554" column="23" lean-forward="true" selection-start-line="554" selection-start-column="23" selection-end-line="554" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="610" column="13" lean-forward="false" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
+          <folding>
+            <element signature="e#24329#24330#0" expanded="false" />
+            <element signature="e#24394#24395#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/io/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="274" column="31" lean-forward="false" selection-start-line="274" selection-start-column="23" selection-end-line="274" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/PawoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#613#614#0" expanded="false" />
+            <element signature="e#678#679#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/resource/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="280">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/resource/pawo_goods_init.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-basic/0.0.1/pawo-common-basic-0.0.1.jar!/com/gm/domain/TransactionTypeEnum.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <marker date="1548255524315" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1548255524315" expanded="true" signature="228:235" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="50" column="60" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.11.RELEASE/spring-data-redis-1.8.11.RELEASE.jar!/org/springframework/data/redis/core/HashOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.11.RELEASE/spring-data-redis-1.8.11.RELEASE.jar!/org/springframework/data/redis/connection/RedisKeyCommands.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/orika/OrikaProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/orika/OrikaAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1592">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/orika/OrikaMapperFactoryConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/orika/OrikaMapperFactoryBuilderConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2740">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-basic/0.0.1/pawo-common-basic-0.0.1.jar!/com/gm/order/ShoppingOrderVo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/SystemRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/OrderMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.16.RELEASE/spring-core-4.3.16.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-basic/0.0.1/pawo-common-basic-0.0.1.jar!/com/gm/order/ShoppingOrdersRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <marker date="1548255524315" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1548255524315" expanded="false" signature="136:222" ph="..." />
+            <marker date="1548255524315" expanded="true" signature="984:1958" ph="{...}" />
+            <marker date="1548255524315" expanded="false" signature="1985:1996" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2011:2017" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2083:2094" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2122:2128" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2174:2185" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2206:2212" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2259:2270" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2292:2298" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2341:2352" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2370:2376" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2421:2432" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2451:2457" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2504:2515" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2537:2543" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2578:2589" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2612:2618" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2650:2661" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2680:2686" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2732:2743" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2764:2770" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="2804:2815" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="2828:2834" ph=" }" />
+            <marker date="1548255524315" expanded="true" signature="2917:3105" ph="{...}" />
+            <marker date="1548255524315" expanded="true" signature="3161:3321" ph="{...}" />
+            <marker date="1548255524315" expanded="true" signature="3379:3543" ph="{...}" />
+            <marker date="1548255524315" expanded="true" signature="3593:3741" ph="{...}" />
+            <marker date="1548255524315" expanded="true" signature="3794:3946" ph="{...}" />
+            <marker date="1548255524315" expanded="true" signature="4004:4168" ph="{...}" />
+            <marker date="1548255524315" expanded="false" signature="4162:4168" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="4218:4229" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="4258:4264" ph=" }" />
+            <marker date="1548255524315" expanded="false" signature="4307:4318" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="4339:4345" ph=" }" />
+            <marker date="1548255524315" expanded="true" signature="4401:4561" ph="{...}" />
+            <marker date="1548255524315" expanded="false" signature="4555:4561" ph=" }" />
+            <marker date="1548255524315" expanded="true" signature="4599:9390" ph="{...}" />
+            <marker date="1548255524315" expanded="false" signature="9436:9447" ph=" { " />
+            <marker date="1548255524315" expanded="false" signature="9493:9499" ph=" }" />
+            <marker date="1548255524315" expanded="true" signature="9527:10873" ph="{...}" />
+            <marker date="1548255524315" expanded="true" signature="10904:11317" ph="{...}" />
+            <marker date="1548255524315" expanded="true" signature="11188:11317" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-basic/0.0.1/pawo-common-basic-0.0.1.jar!/com/gm/order/ShoppingOrders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/test/JobController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/ShoppingInitialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.16.RELEASE/spring-web-4.3.16.RELEASE.jar!/org/springframework/web/bind/annotation/RequestBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/RpcOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.11.RELEASE/spring-data-redis-1.8.11.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="792" column="39" lean-forward="false" selection-start-line="792" selection-start-column="20" selection-end-line="792" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="132" column="20" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/IOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -465,6 +1341,18 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="Copyright.UI">
         <settings>
           <last-edited>haiyi</last-edited>
@@ -472,6 +1360,18 @@
             <option name="proportions">
               <list>
                 <option value="0.20221949" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -500,6 +1400,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>pawo-power-app</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -514,6 +1427,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

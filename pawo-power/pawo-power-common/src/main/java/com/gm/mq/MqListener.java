@@ -26,7 +26,7 @@ import java.io.IOException;
  * @since JDK 1.7
  */
 @Component
-//@RabbitListener(queues = "hello",containerFactory = "rabbitListenerContainerFactory")
+@RabbitListener(queues = "hello",containerFactory = "rabbitListenerContainerFactory")
 public class MqListener {
 
     @RabbitListener(queues = "queue")

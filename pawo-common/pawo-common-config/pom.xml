@@ -27,6 +27,17 @@
            <artifactId>pawo-common-basic</artifactId>
            <version>0.0.1</version>
        </dependency>
+       <!-- orika插件  -->
+       <dependency>
+           <groupId>ma.glasnost.orika</groupId>
+           <artifactId>orika-core</artifactId>
+           <version>1.5.2</version><!--或最近版本-->
+       </dependency>
+       <dependency>
+           <groupId>antlr</groupId>
+           <artifactId>antlr</artifactId>
+           <version>2.7.2</version>
+       </dependency>
    </dependencies>
     
 </project>

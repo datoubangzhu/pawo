@@ -1,4 +1,4 @@
-package com.gm.dubbo;
+package com.gm.test;
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
  * Copyright (c) 2012-2019. gmzhao.
@@ -11,9 +11,11 @@ import com.basic.util.DateTool;
 import com.gm.job.JobExecute;
 import com.gm.quartz.JobBeanParam;
 import com.gm.quartz.SchedulerManager;
+import com.gm.service.ShoppingInitialization;
 
 import org.quartz.SchedulerException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -33,17 +35,20 @@ import cn.hutool.core.date.DateTime;
  * @since JDK 1.7
  */
 @RestController
-@RequestMapping("job")
+@RequestMapping("init")
 public class JobController {
 
-    final private SchedulerManager schedulerManager;
+    final private SchedulerManager       schedulerManager;
+    final private ShoppingInitialization shoppingInit;
 
     @Autowired
-    public JobController(SchedulerManager schedulerManager) {
+    public JobController(SchedulerManager schedulerManager,
+                         ShoppingInitialization shoppingInit) {
         this.schedulerManager = schedulerManager;
+        this.shoppingInit = shoppingInit;
     }
 
-    @RequestMapping("test")
+    @RequestMapping("job/test")
     public void test() throws SchedulerException {
         JobBeanParam param = new JobBeanParam();
         param.setUserName("hello");
@@ -54,4 +59,9 @@ public class JobController {
         schedulerManager.startJob(DateTool.getCornSeconds(date),"firstJob","demoJobGroup",JobExecute.class,param);
     }
 
+
+    @GetMapping("goods")
+    public void init(){
+        shoppingInit.initGoods();
+    }
 }

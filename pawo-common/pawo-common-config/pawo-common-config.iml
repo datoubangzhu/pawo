@@ -17,6 +17,15 @@
     <orderEntry type="module" module-name="pawo-common-basic" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-support:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: cn.hutool:hutool-all:4.0.9" level="project" />
+    <orderEntry type="library" name="Maven: ma.glasnost.orika:orika-core:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.21.0-GA" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.8" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.carrotsearch:java-sizeof:0.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.janino:janino:2.7.8" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.janino:commons-compiler:2.7.8" level="project" />
+    <orderEntry type="library" name="Maven: antlr:antlr:2.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.16.RELEASE" level="project" />
@@ -40,7 +49,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.3" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:2.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:1.10.19" level="project" />

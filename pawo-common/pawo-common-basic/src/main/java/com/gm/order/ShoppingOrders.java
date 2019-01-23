@@ -42,7 +42,7 @@ public class ShoppingOrders extends Model<ShoppingOrders> {
     /**
      * 下单类型（秒杀/下单）
      */
-    private Integer transactionType;
+    private String transactionType;
     /**
      * 卖家编号
      */
@@ -64,9 +64,9 @@ public class ShoppingOrders extends Model<ShoppingOrders> {
      */
     private String orderStatus;
     /**
-     * 订单状态信息
+     * 订单备注信息
      */
-    private String  statusMsg;
+    private String  remarkMsg;
     /**
      * 下单时间
      */
@@ -107,11 +107,11 @@ public class ShoppingOrders extends Model<ShoppingOrders> {
         this.sn = sn;
     }
 
-    public Integer getTransactionType() {
+    public String getTransactionType() {
         return transactionType;
     }
 
-    public void setTransactionType(Integer transactionType) {
+    public void setTransactionType(String transactionType) {
         this.transactionType = transactionType;
     }
 
@@ -121,6 +121,14 @@ public class ShoppingOrders extends Model<ShoppingOrders> {
 
     public void setGoodsCode(String goodsCode) {
         this.goodsCode = goodsCode;
+    }
+
+    public String getRemarkMsg() {
+        return remarkMsg;
+    }
+
+    public void setRemarkMsg(String remarkMsg) {
+        this.remarkMsg = remarkMsg;
     }
 
     public Double getPrice() {
@@ -147,20 +155,12 @@ public class ShoppingOrders extends Model<ShoppingOrders> {
         this.orderStatus = orderStatus;
     }
 
-    public String getStatusMsg() {
-        return statusMsg;
-    }
-
     public String getSellerSn() {
         return sellerSn;
     }
 
     public void setSellerSn(String sellerSn) {
         this.sellerSn = sellerSn;
-    }
-
-    public void setStatusMsg(String statusMsg) {
-        this.statusMsg = statusMsg;
     }
 
     public String getInsertTime() {
@@ -205,7 +205,7 @@ public class ShoppingOrders extends Model<ShoppingOrders> {
                 ", price=" + price +
                 ", volume=" + volume +
                 ", orderStatus='" + orderStatus + '\'' +
-                ", statusMsg='" + statusMsg + '\'' +
+                ", remarkMsg='" + remarkMsg + '\'' +
                 ", insertTime='" + insertTime + '\'' +
                 ", sellerSn='" + sellerSn + '\'' +
                 ", userId=" + userId +

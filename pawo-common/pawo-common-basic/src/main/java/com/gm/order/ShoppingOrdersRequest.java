@@ -6,9 +6,14 @@
 
 package com.gm.order;
 
+import com.gm.domain.TransactionTypeEnum;
+
+import org.springframework.jmx.export.annotation.ManagedNotification;
+
 import java.io.Serializable;
 
 import lombok.Data;
+import lombok.NonNull;
 
 /**
  * <p> 用户下单订单表Request </p>
@@ -29,46 +34,49 @@ public class ShoppingOrdersRequest implements Serializable {
     /**
      * 订单编号
      */
-    private String  sn;
+    private String              sn;
     /**
      * 下单类型（秒杀/下单）
      */
-    private Integer transactionType;
+    @NonNull
+    private TransactionTypeEnum transactionType;
     /**
      * 卖家编号
      */
-    private String  sellerSn;
+    @NonNull
+    private String              sellerSn;
     /**
      * 商品编号
      */
-    private String  goodsCode;
+    @NonNull
+    private String              goodsCode;
     /**
      * 价格
      */
-    private Double  price;
+    @NonNull
+    private Double              price;
     /**
      * 下单数量
      */
-    private Integer volume;
-    /**
-     * 订单状态
-     */
-    private String  orderStatus;
+    @NonNull
+    private Integer             volume;
     /**
      * 订单状态信息
      */
-    private String  statusMsg;
+    @NonNull
+    private String              remarkMsg;
     /**
      * 下单时间
      */
-    private String  insertTime;
+    private String              insertTime;
     /**
      * 用户编号
      */
-    private Integer userId;
+    private Integer             userId;
     /**
      * 用户姓名
      */
-    private String  userName;
+    @NonNull
+    private String              userName;
 
 }

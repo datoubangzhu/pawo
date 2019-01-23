@@ -32,7 +32,18 @@ public enum PawoError {
     /**
      * 订单有关错误 20001~29999
      */
-    SUBMIT_FAILURE(20001);
+    SUBMIT_FAILURE(20001),
+
+
+    /**
+     * 初始化数据有关错误 30001~39999
+     */
+    INIT_FAILURE(30001),
+    /**
+     * 初始化商品数据失败
+     */
+    INIT_GOODS_FAILURE(30002)
+    ;
 
 
     private final int code;

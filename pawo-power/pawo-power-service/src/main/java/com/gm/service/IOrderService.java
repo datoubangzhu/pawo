@@ -1,9 +1,12 @@
 package com.gm.service;
 
 import com.baomidou.mybatisplus.service.IService;
+import com.gm.goods.GoodsOrders;
 import com.gm.order.ShoppingOrderVo;
 import com.gm.order.ShoppingOrders;
 import com.gm.order.ShoppingOrdersRequest;
+
+import java.util.List;
 
 
 /**
@@ -15,10 +18,23 @@ public interface IOrderService extends IService<ShoppingOrders> {
 
 
     /**
-     * 下单接口
+     * 数据库下单接口
      *
      * @param orderRequest request param
      * @return 结果
      */
     ShoppingOrderVo submit(ShoppingOrdersRequest orderRequest);
+    /**
+     * 缓存数据库下单接口
+     *
+     * @param orderRequest request param
+     * @return 结果
+     */
+    ShoppingOrderVo submitCache(ShoppingOrdersRequest orderRequest);
+    /**
+     * 获取商品信息
+     *
+     * @return 商品信息
+     */
+    List<GoodsOrders> list();
 }

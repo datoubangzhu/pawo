@@ -7,15 +7,23 @@
 package com.gm.controller;
 
 import com.gm.dubbo.service.RpcOrderService;
+import com.gm.goods.GoodsOrders;
 import com.gm.order.ShoppingOrderVo;
 import com.gm.order.ShoppingOrdersRequest;
 import com.gm.service.IOrderService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
+import javax.validation.Valid;
+
+import lombok.NonNull;
 import ma.glasnost.orika.MapperFacade;
 
 /**
@@ -51,8 +59,9 @@ public class OrderController {
      * @param shoppingOrder 订单信息
      */
     @RequestMapping("submit")
-    public ResponseEntity<ShoppingOrderVo> handleOrder(ShoppingOrdersRequest shoppingOrder){
-        ShoppingOrderVo shoppingOrderVo =  orderService.submit(shoppingOrder);
+    public ResponseEntity<ShoppingOrderVo> handleOrder(@RequestBody @Valid ShoppingOrdersRequest shoppingOrder){
+        //ShoppingOrderVo shoppingOrderVo =  orderService.submit(shoppingOrder);
+        ShoppingOrderVo shoppingOrderVo =  orderService.submitCache(shoppingOrder);
         return ResponseEntity.ok(shoppingOrderVo);
     }
 
@@ -64,9 +73,21 @@ public class OrderController {
      * @param shoppingOrder 订单信息
      */
     @RequestMapping("submit/fast")
-    public ResponseEntity<ShoppingOrderVo> handleOrderFast(ShoppingOrdersRequest shoppingOrder){
+    public ResponseEntity<ShoppingOrderVo> handleOrderFast(@RequestBody @Valid ShoppingOrdersRequest shoppingOrder){
         ShoppingOrderVo shoppingOrderVo = rpcOrderService.fastSubmit(shoppingOrder);
         return  ResponseEntity.ok(shoppingOrderVo);
 
+    }
+
+
+    /**
+     * 获取商品信息列表
+     *
+     * @return 商品信息
+     */
+    @GetMapping("goods/list")
+    public ResponseEntity listGoods(){
+        List<GoodsOrders> goodsOrders =  orderService.list();
+        return ResponseEntity.ok(goodsOrders);
     }
 }
