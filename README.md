@@ -1,5 +1,5 @@
-## 秒杀系统 PAWO
-> 简介：pawo 是一个秒杀系统。用于模拟定时抢单。采用mq处理下单信息，到点抢单时采用分布式rpc+Nginx实现负载均衡。
+## 秒杀购物系统 PAWO
+> 简介：pawo 是一个秒杀购物系统。用于模拟抢单。采用mq处理下单信息，到点抢单时采用分布式rpc+Nginx实现负载均衡。
 
 技术实现：Springboot+Redis+RabbitMQ+Dubbo+Nginx
 
