@@ -24,34 +24,87 @@
     <SUITE FILE_PATH="coverage/pawo_power$ShoppingInitialization_test.coverage" NAME="ShoppingInitialization.test Coverage Results" MODIFIED="1548244013420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.gm.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/pawo_power$PawoApplication.coverage" NAME="PawoApplication Coverage Results" MODIFIED="1548383109609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.gm.*</FILTER>
+    </SUITE>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DynamicProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/basic/proxy/DynamicProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="61" />
+              <folding>
+                <element signature="e#763#1115#0" expanded="true" />
+                <element signature="e#1114#1115#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="132" column="20" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+            <state relative-caret-position="139">
+              <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisTemplate.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.11.RELEASE/spring-data-redis-1.8.11.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="792" column="39" lean-forward="false" selection-start-line="792" selection-start-column="20" selection-end-line="792" selection-end-column="39" />
+            <state relative-caret-position="112">
+              <caret line="77" column="81" lean-forward="true" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderMapping.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/OrderMapping.java">
+      <file leaf-file-name="RpcOrderServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/impl/RpcOrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="212">
+              <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DubboService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/DubboService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderRiskManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/OrderRiskManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#4141#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1954#2276#0" expanded="true" />
+                <element signature="e#2275#2276#0" expanded="true" />
+                <element signature="e#2496#2814#0" expanded="true" />
+                <element signature="e#2813#2814#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IRpcOrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/IRpcOrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,71 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RpcOrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/RpcOrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestBody.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.16.RELEASE/spring-web-4.3.16.RELEASE.jar!/org/springframework/web/bind/annotation/RequestBody.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/test/JobController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShoppingInitialization.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/ShoppingInitialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IOrderService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/IOrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pawo-power-common/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2740">
-              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+            <state relative-caret-position="20">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -147,6 +140,7 @@
       <find>file</find>
       <find>8080</find>
       <find>女装</find>
+      <find>=========================</find>
       <find>haiyi</find>
     </findStrings>
     <replaceStrings>
@@ -178,8 +172,20 @@
         <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/mapping/OrderMapping.java" />
         <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/ShoppingInitialization.java" />
         <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/IOrderService.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/A.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/B.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/Sub.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/Super.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/C.java" />
+        <option value="$PROJECT_DIR$/pawo-power-common/src/main/java/com/basic/proxy/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderRiskManager.java" />
         <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/RpcOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/impl/RpcOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/IPrcOrderService.java" />
+        <option value="$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/IRpcOrderService.java" />
         <option value="$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/OrderRiskManager.java" />
       </list>
     </option>
   </component>
@@ -233,122 +239,83 @@
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gm" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
               <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-common" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-power-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+              <item name="gm" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
@@ -405,17 +372,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gm" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pawo-power" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pawo-power" type="462c0819:PsiDirectoryNode" />
-              <item name="pawo-power-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gm" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -477,6 +433,25 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
+    <configuration name="C" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gm.pb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.gm.pb.C" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pawo-power-common" />
+      <envs />
+    </configuration>
     <configuration name="PawoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -509,6 +484,56 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="Main.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.basic.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="pawo-power-common" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.basic.proxy" />
+      <option name="MAIN_CLASS_NAME" value="com.basic.proxy.Main" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Main.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.basic.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="pawo-power-common" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.basic.proxy" />
+      <option name="MAIN_CLASS_NAME" value="com.basic.proxy.Main" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="ShoppingInitialization.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -571,14 +596,20 @@
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.PawoApplication" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ShoppingInitialization.test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.C" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Main.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Main.main" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.PawoApplication" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ShoppingInitialization.test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Main.main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Main.test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.C" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ShoppingInitialization.test" />
       </list>
     </recent_temporary>
   </component>
@@ -596,17 +627,17 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 05m 16s.xml">
-      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    <history-entry file="Main_main - 2019.01.25 at 10h 06m 34s.xml">
+      <configuration name="Main.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 05m 49s.xml">
-      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    <history-entry file="Main_main - 2019.01.25 at 10h 06m 42s.xml">
+      <configuration name="Main.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 08m 13s.xml">
-      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    <history-entry file="Main_main - 2019.01.25 at 10h 25m 06s.xml">
+      <configuration name="Main.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 08m 21s.xml">
-      <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
+    <history-entry file="Main_test - 2019.01.25 at 10h 06m 27s.xml">
+      <configuration name="Main.test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ShoppingInitialization_test - 2019.01.23 at 19h 08m 32s.xml">
       <configuration name="ShoppingInitialization.test" configurationId="JUnit" />
@@ -638,7 +669,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.4935275" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5830619" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46036917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.50647247" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -649,7 +680,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36482084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4907709" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -666,23 +697,54 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="45" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>method.invoke(orderService, args);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>args</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>orderService</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>OrderServiceImpl.class.newInstance()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.invoke(OrderServiceImpl.class.newInstance(), args)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(IOrderService)Proxy.newProxyInstance(OrderRiskManager.class.getClassLoader(),
+                 orderService.getClass().getInterfaces(), new InvocationHandler() {
+            @Override
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                log.info(&quot;下单前风控检查开始----------------------------------------------&quot;);
+                Object object = method.invoke(orderService,args);
+                log.info(&quot;下单前风控检查结束----------------------------------------------&quot;);
+                return object;
+            }
+        });</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>redisTemplate.opsForHash().get(&quot;pawo:goods&quot;,&quot;006&quot;);</expression-string>
         <language-id>JAVA</language-id>
@@ -698,297 +760,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods:006&quot;);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods:003&quot;);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods&quot;);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>redisTemplate.opsForValue().get(&quot;pawo:goods&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>redisTemplate.opsForValue().get(PAWO_GOODS);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(GoodsOrders)redisTemplate.opsForValue().get(PAWO_GOODS+goodsCode);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pawo-power-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/error/ResponseBodyBasic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#1047#1048#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/resource/application.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/exception/PawoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pawo-common/pawo-common-config/src/main/java/com/gm/config/exception/PawoError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/constant/error/ResponseBodyBasic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#1047#1048#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="135" column="51" lean-forward="false" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/exception/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/job/JobExecute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="61" column="7" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/mq/MqListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="3" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/4.0.3/amqp-client-4.0.3.jar!/com/rabbitmq/client/ConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="518" column="22" lean-forward="false" selection-start-line="518" selection-start-column="22" selection-end-line="518" selection-end-column="22" />
-          <folding>
-            <marker date="1536585369470" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1536585369470" expanded="false" signature="143:1423" ph="..." />
-            <marker date="1536585369470" expanded="true" signature="3588:4022" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="4051:4062" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4079:4085" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4123:4134" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4151:4157" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="4218:4341" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="4367:4378" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4424:4430" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4465:4476" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4493:4499" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4532:4543" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4564:4570" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4616:4627" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4652:4658" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4691:4702" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4723:4729" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4775:4786" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4811:4817" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4853:4864" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4888:4894" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="4946:4957" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="4988:4994" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="5104:6449" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="6568:6616" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="6657:6844" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="6885:6896" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="6928:6934" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="6999:7010" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="7057:7063" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="7102:7113" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="7143:7149" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="7210:7221" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="7264:7270" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="7310:7321" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="7352:7358" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="7410:7610" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="7649:7660" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="7690:7696" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="7734:7745" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="7774:7780" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="7831:8025" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="8082:8093" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8132:8138" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8175:8186" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8214:8220" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8283:8294" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8339:8345" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8399:8410" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8440:8446" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8521:8532" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8574:8580" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8619:8630" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8653:8659" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8713:8724" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8753:8759" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8804:8815" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8835:8841" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8898:8909" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="8932:8938" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="8993:9004" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9027:9033" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="9111:9122" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9159:9165" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="9226:9237" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9268:9274" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="9337:9348" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9381:9387" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="9460:9471" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9505:9511" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="9556:9567" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9593:9599" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="9662:9673" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9708:9714" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="9765:9776" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="9805:9811" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="9884:10097" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="10125:10136" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="10195:10201" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="10292:10423" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="10529:10599" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="10732:10918" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="10971:11072" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="11154:11592" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="11641:11652" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="11682:11688" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="11760:11771" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="11814:11820" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="11868:11879" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="11908:11914" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="11984:11995" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="12036:12042" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="12114:12125" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="12166:12172" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="12223:12234" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="12263:12269" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="12365:13034" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="13126:13231" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="13339:13450" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="13569:13674" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="13770:13860" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="13983:14073" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="14191:14285" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="14430:14524" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="14646:14725" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="14859:14959" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="15108:15215" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="15376:17326" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="17408:18487" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="18621:18702" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="18779:18914" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="19012:19163" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="19264:19388" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="19512:19652" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="19731:19906" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="19945:20116" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="20162:20173" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="20209:20215" ph=" }" />
-            <marker date="1536585369470" expanded="true" signature="20289:20366" ph="{...}" />
-            <marker date="1536585369470" expanded="true" signature="20441:20512" ph="{...}" />
-            <marker date="1536585369470" expanded="false" signature="20563:20574" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="20601:20607" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="20633:20644" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="20660:20666" ph=" }" />
-            <marker date="1536585369470" expanded="false" signature="20699:20710" ph=" { " />
-            <marker date="1536585369470" expanded="false" signature="20727:20733" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/mq/MqProducterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="95" column="31" lean-forward="false" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1067,17 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/PawoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#613#614#0" expanded="false" />
-            <element signature="e#678#679#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/resource/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1107,8 +870,8 @@
         <state relative-caret-position="80">
           <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
-            <marker date="1548255524315" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1548255524315" expanded="true" signature="228:235" ph="{}" />
+            <marker date="1548415964822" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1548415964822" expanded="true" signature="228:235" ph="{}" />
           </folding>
         </state>
       </provider>
@@ -1200,7 +963,7 @@
         <state relative-caret-position="116">
           <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1218,50 +981,50 @@
         <state relative-caret-position="120">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <marker date="1548255524315" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1548255524315" expanded="false" signature="136:222" ph="..." />
-            <marker date="1548255524315" expanded="true" signature="984:1958" ph="{...}" />
-            <marker date="1548255524315" expanded="false" signature="1985:1996" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2011:2017" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2083:2094" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2122:2128" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2174:2185" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2206:2212" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2259:2270" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2292:2298" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2341:2352" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2370:2376" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2421:2432" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2451:2457" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2504:2515" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2537:2543" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2578:2589" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2612:2618" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2650:2661" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2680:2686" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2732:2743" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2764:2770" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="2804:2815" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="2828:2834" ph=" }" />
-            <marker date="1548255524315" expanded="true" signature="2917:3105" ph="{...}" />
-            <marker date="1548255524315" expanded="true" signature="3161:3321" ph="{...}" />
-            <marker date="1548255524315" expanded="true" signature="3379:3543" ph="{...}" />
-            <marker date="1548255524315" expanded="true" signature="3593:3741" ph="{...}" />
-            <marker date="1548255524315" expanded="true" signature="3794:3946" ph="{...}" />
-            <marker date="1548255524315" expanded="true" signature="4004:4168" ph="{...}" />
-            <marker date="1548255524315" expanded="false" signature="4162:4168" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="4218:4229" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="4258:4264" ph=" }" />
-            <marker date="1548255524315" expanded="false" signature="4307:4318" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="4339:4345" ph=" }" />
-            <marker date="1548255524315" expanded="true" signature="4401:4561" ph="{...}" />
-            <marker date="1548255524315" expanded="false" signature="4555:4561" ph=" }" />
-            <marker date="1548255524315" expanded="true" signature="4599:9390" ph="{...}" />
-            <marker date="1548255524315" expanded="false" signature="9436:9447" ph=" { " />
-            <marker date="1548255524315" expanded="false" signature="9493:9499" ph=" }" />
-            <marker date="1548255524315" expanded="true" signature="9527:10873" ph="{...}" />
-            <marker date="1548255524315" expanded="true" signature="10904:11317" ph="{...}" />
-            <marker date="1548255524315" expanded="true" signature="11188:11317" ph="{...}" />
+            <marker date="1548415964822" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1548415964822" expanded="false" signature="136:222" ph="..." />
+            <marker date="1548415964822" expanded="true" signature="984:1958" ph="{...}" />
+            <marker date="1548415964822" expanded="false" signature="1985:1996" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2011:2017" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2083:2094" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2122:2128" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2174:2185" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2206:2212" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2259:2270" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2292:2298" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2341:2352" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2370:2376" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2421:2432" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2451:2457" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2504:2515" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2537:2543" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2578:2589" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2612:2618" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2650:2661" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2680:2686" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2732:2743" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2764:2770" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="2804:2815" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="2828:2834" ph=" }" />
+            <marker date="1548415964822" expanded="true" signature="2917:3105" ph="{...}" />
+            <marker date="1548415964822" expanded="true" signature="3161:3321" ph="{...}" />
+            <marker date="1548415964822" expanded="true" signature="3379:3543" ph="{...}" />
+            <marker date="1548415964822" expanded="true" signature="3593:3741" ph="{...}" />
+            <marker date="1548415964822" expanded="true" signature="3794:3946" ph="{...}" />
+            <marker date="1548415964822" expanded="true" signature="4004:4168" ph="{...}" />
+            <marker date="1548415964822" expanded="false" signature="4162:4168" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="4218:4229" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="4258:4264" ph=" }" />
+            <marker date="1548415964822" expanded="false" signature="4307:4318" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="4339:4345" ph=" }" />
+            <marker date="1548415964822" expanded="true" signature="4401:4561" ph="{...}" />
+            <marker date="1548415964822" expanded="false" signature="4555:4561" ph=" }" />
+            <marker date="1548415964822" expanded="true" signature="4599:9390" ph="{...}" />
+            <marker date="1548415964822" expanded="false" signature="9436:9447" ph=" { " />
+            <marker date="1548415964822" expanded="false" signature="9493:9499" ph=" }" />
+            <marker date="1548415964822" expanded="true" signature="9527:10873" ph="{...}" />
+            <marker date="1548415964822" expanded="true" signature="10904:11317" ph="{...}" />
+            <marker date="1548415964822" expanded="true" signature="11188:11317" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1277,15 +1040,7 @@
     <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/test/JobController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/ShoppingInitialization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="43" />
+          <caret line="64" column="26" lean-forward="false" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1294,15 +1049,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/RpcOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1524533227945" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1524533227945" expanded="false" signature="163:356" ph="..." />
+            <marker date="1524533227945" expanded="true" signature="358:438" ph="@{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1310,31 +1061,376 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="792" column="39" lean-forward="false" selection-start-line="792" selection-start-column="20" selection-end-line="792" selection-end-column="39" />
+          <folding>
+            <marker date="1524533223705" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1524533223705" expanded="false" signature="159:1965" ph="..." />
+            <marker date="1524533223705" expanded="true" signature="2985:2992" ph="{}" />
+            <marker date="1524533223705" expanded="true" signature="3031:4371" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="4422:4433" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="4488:4494" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="4572:4641" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="4737:6158" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="6213:6746" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="6817:6893" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="7013:8718" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="7423:7561" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="8579:8598" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="8786:8861" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="8978:10103" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="9014:9148" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="10080:10095" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="10183:10254" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="10406:10511" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="10603:11058" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="11121:11132" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="11161:11167" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="11246:11502" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="11611:11645" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="11744:11755" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="11769:11775" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="11816:11827" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="11856:11862" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="11925:11936" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="11977:11983" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="12031:12042" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12078:12084" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="12162:12233" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="12287:12298" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12328:12334" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="12403:12414" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12450:12456" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="12521:12532" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12564:12570" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="12620:12631" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12657:12663" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="12730:12741" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12775:12781" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="12833:12844" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12872:12878" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="12932:12943" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="12973:12979" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="13056:13115" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="13171:13182" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="13214:13220" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="13301:13364" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="13422:13433" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="13462:13468" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="13548:13605" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="13674:13685" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="13722:13728" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="13768:13957" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="13999:14010" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="14054:14060" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="14104:14249" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="14300:14561" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="14606:14704" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="14884:16180" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="16261:16708" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="16815:17313" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="17346:17599" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="17666:17785" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="17824:18068" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="17860:18011" ph="doInRedis(connection) → { " />
+            <marker date="1524533223705" expanded="false" signature="18036:18060" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="18100:18387" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="18171:18266" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="18358:18373" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="18432:18795" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="18562:18661" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="18752:18771" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="18830:19102" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="18917:19014" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="19073:19088" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="19178:19713" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="19335:19432" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="19684:19699" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="19767:20225" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="19854:19951" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="20196:20211" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="20290:20720" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="20498:20593" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="20691:20706" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="20755:21015" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="20839:20947" ph="doInRedis(connection) → { " />
+            <marker date="1524533223705" expanded="false" signature="20977:21001" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="21075:21494" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="21159:21250" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="21465:21480" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="21530:21938" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="21632:21737" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="21794:21809" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="21974:22247" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="22061:22158" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="22218:22233" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="22299:22578" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="22386:22483" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="22549:22564" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="22605:22876" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="22652:22747" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="22803:22818" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="22921:23271" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="23052:23147" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="23242:23257" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="23327:23675" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="23474:23571" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="23646:23661" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="23709:23982" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="23797:23896" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="23953:23968" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="24014:24281" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="24100:24212" ph="doInRedis(connection) → { " />
+            <marker date="1524533223705" expanded="false" signature="24243:24267" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="24366:24736" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="24510:24606" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="24707:24722" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="24762:25010" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="24785:24907" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="24981:24996" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="25038:25288" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="25061:25183" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="25259:25274" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="25319:25608" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="25390:25485" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="25579:25594" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="25652:25933" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="25728:25823" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="25904:25919" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="25961:26211" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="25984:26106" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="26182:26197" ph="}" />
+            <marker date="1524533223705" expanded="false" signature="26256:26267" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="26313:26319" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="26406:26906" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="26607:26741" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="26806:26821" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="26985:27059" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="27178:27946" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="28001:28472" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="28247:28365" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="28443:28458" ph="}" />
+            <marker date="1524533223705" expanded="false" signature="28532:28543" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="28593:28599" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="28648:28795" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="28842:28985" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="29043:29054" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="29103:29109" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="29165:29176" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="29224:29230" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="29275:29414" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="29472:29483" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="29532:29538" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="29585:29728" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="29773:29912" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="29968:29979" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="30027:30033" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="30094:30241" ph="{...}" />
+            <marker date="1524533223705" expanded="true" signature="30314:30379" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="30439:30450" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="30489:30495" ph=" }" />
+            <marker date="1524533223705" expanded="false" signature="30547:30558" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="30600:30606" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="30670:30923" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="30693:30811" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="30900:30915" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="30974:31245" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="31010:31179" ph="doInRedis(connection) → { " />
+            <marker date="1524533223705" expanded="false" signature="31213:31237" ph=" }" />
+            <marker date="1524533223705" expanded="true" signature="31306:31556" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="31329:31447" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="31533:31548" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="31589:31834" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="31612:31730" ph="doInRedis(connection) → {" />
+            <marker date="1524533223705" expanded="false" signature="31811:31826" ph="}" />
+            <marker date="1524533223705" expanded="true" signature="31914:31987" ph="{...}" />
+            <marker date="1524533223705" expanded="false" signature="32048:32059" ph=" { " />
+            <marker date="1524533223705" expanded="false" signature="32090:32096" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/Sub.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="132" column="20" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/Super.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/gm/pb/C.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="227" column="13" lean-forward="false" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/basic/proxy/BussinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/ShoppingInitialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/basic/proxy/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-app/src/main/java/com/gm/PawoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#613#614#0" expanded="false" />
+            <element signature="e#678#679#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-common/src/main/java/com/basic/proxy/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="61" />
+          <folding>
+            <element signature="e#763#1115#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-config/0.0.1/pawo-common-config-0.0.1.jar!/com/gm/config/exception/PawoException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="483" column="51" lean-forward="false" selection-start-line="483" selection-start-column="47" selection-end-line="483" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="843" column="11" lean-forward="false" selection-start-line="843" selection-start-column="11" selection-end-line="843" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/IOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="20">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/iknow/u/pawo-common-config/0.0.1/pawo-common-config-0.0.1.jar!/com/gm/config/exception/PawoError.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/DubboService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/impl/RpcOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-consumer/src/main/java/com/gm/dubbo/service/IRpcOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pawo-power-web/src/main/java/com/gm/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        <state relative-caret-position="112">
+          <caret line="77" column="81" lean-forward="true" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-power-service/src/main/java/com/gm/service/OrderRiskManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#4141#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1954#2276#0" expanded="true" />
+            <element signature="e#2275#2276#0" expanded="true" />
+            <element signature="e#2496#2814#0" expanded="true" />
+            <element signature="e#2813#2814#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

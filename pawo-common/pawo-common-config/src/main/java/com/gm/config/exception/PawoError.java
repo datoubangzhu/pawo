@@ -33,8 +33,10 @@ public enum PawoError {
      * 订单有关错误 20001~29999
      */
     SUBMIT_FAILURE(20001),
-
-
+    /**
+     * 下单检查失败
+     */
+    SUBMIT_CHECK_FAILURE(20002),
     /**
      * 初始化数据有关错误 30001~39999
      */

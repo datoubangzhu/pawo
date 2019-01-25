@@ -6,11 +6,13 @@
 
 package com.gm.controller;
 
-import com.gm.dubbo.service.RpcOrderService;
+import com.gm.dubbo.service.IRpcOrderService;
+import com.gm.dubbo.service.impl.RpcOrderServiceImpl;
 import com.gm.goods.GoodsOrders;
 import com.gm.order.ShoppingOrderVo;
 import com.gm.order.ShoppingOrdersRequest;
 import com.gm.service.IOrderService;
+import com.gm.service.OrderRiskManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,8 +25,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-import lombok.NonNull;
-import ma.glasnost.orika.MapperFacade;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * <p> 下单控制层 </p>
@@ -37,19 +38,18 @@ import ma.glasnost.orika.MapperFacade;
  * @since JDK 1.7
  */
 @RestController
+@Slf4j
 @RequestMapping("pawo/order")
 public class OrderController {
 
 
-    private final RpcOrderService rpcOrderService;
-    private final IOrderService orderService;
+    private final OrderRiskManager    orderRiskManager;
 
 
     @Autowired
-    public OrderController(RpcOrderService rpcOrderService,
-                           IOrderService orderService) {
-        this.orderService = orderService;
-        this.rpcOrderService = rpcOrderService;
+    public OrderController(OrderRiskManager orderRiskManager) {
+
+        this.orderRiskManager = orderRiskManager;
     }
 
 
@@ -61,7 +61,8 @@ public class OrderController {
     @RequestMapping("submit")
     public ResponseEntity<ShoppingOrderVo> handleOrder(@RequestBody @Valid ShoppingOrdersRequest shoppingOrder){
         //ShoppingOrderVo shoppingOrderVo =  orderService.submit(shoppingOrder);
-        ShoppingOrderVo shoppingOrderVo =  orderService.submitCache(shoppingOrder);
+        IOrderService service =  orderRiskManager.getOrderService();
+        ShoppingOrderVo shoppingOrderVo =  service.submitCache(shoppingOrder);
         return ResponseEntity.ok(shoppingOrderVo);
     }
 
@@ -74,6 +75,7 @@ public class OrderController {
      */
     @RequestMapping("submit/fast")
     public ResponseEntity<ShoppingOrderVo> handleOrderFast(@RequestBody @Valid ShoppingOrdersRequest shoppingOrder){
+        IRpcOrderService rpcOrderService = orderRiskManager.getRpcOrderService();
         ShoppingOrderVo shoppingOrderVo = rpcOrderService.fastSubmit(shoppingOrder);
         return  ResponseEntity.ok(shoppingOrderVo);
 
@@ -87,7 +89,9 @@ public class OrderController {
      */
     @GetMapping("goods/list")
     public ResponseEntity listGoods(){
-        List<GoodsOrders> goodsOrders =  orderService.list();
+//        IOrderService service = new OrderRiskManager(orderService).getOrderService();
+        IOrderService service  = orderRiskManager.getOrderService();
+        List<GoodsOrders> goodsOrders =  service.list();
         return ResponseEntity.ok(goodsOrders);
     }
 }

@@ -29,7 +29,8 @@ public class DynamicProxy{
 
 
     public Bussiness getProxy(){
-        return (Bussiness)Proxy.newProxyInstance(DynamicProxy.class.getClassLoader(), bussiness.getClass().getInterfaces(), new InvocationHandler() {
+        return (Bussiness)Proxy.newProxyInstance(DynamicProxy.class.getClassLoader(), bussiness.getClass().getInterfaces(),
+                new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 System.out.println("before");

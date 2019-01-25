@@ -103,7 +103,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> im
     public ShoppingOrderVo submitCache(ShoppingOrdersRequest ordersRequest) {
         final String sn = OrderUtil.getOrderSn();
         ordersRequest.setSn(sn);
-        log.info("收到订单信息================================，单号：{},订单详情：{}",sn,ordersRequest.toString());
+        log.info("准备处理订单信息================================，单号：{},订单详情：{}",sn,ordersRequest.toString());
 
         RedisConnectionFactory redisConnectionFactory = redisTemplate.getConnectionFactory();
         RedisConnection connection = redisConnectionFactory.getConnection();

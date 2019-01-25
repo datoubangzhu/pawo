@@ -1,13 +1,14 @@
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2019. 赵贵明 Inc.
+ * Copyright (c) 2012-2019. haiyi Inc.
  * pawo-power All rights reserved.
  */
 
-package com.gm.dubbo.service;
+package com.gm.dubbo.service.impl;
 
 import org.springframework.stereotype.Component;
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.gm.dubbo.service.IRpcOrderService;
 import com.gm.order.ShoppingOrderVo;
 import com.gm.order.ShoppingOrdersRequest;
 import com.gm.service.IDubboOrderService;
@@ -24,7 +25,7 @@ import com.gm.service.IDubboOrderService;
  * @since JDK 1.7
  */
 @Component
-public class RpcOrderService {
+public class RpcOrderServiceImpl implements IRpcOrderService {
 
     @Reference
     private IDubboOrderService dubboOrderService;
