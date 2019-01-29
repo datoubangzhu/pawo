@@ -1,10 +1,10 @@
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * Copyright (c) 2012-2019. gmzhao Inc.
+ * Copyright (c) 2012-2019. 赵贵明 Inc.
  * pawo-power All rights reserved.
  */
 
-package com.gm.service;
+package com.gm.init;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;

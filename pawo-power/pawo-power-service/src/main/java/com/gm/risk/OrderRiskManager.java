@@ -4,13 +4,14 @@
  * pawo-power All rights reserved.
  */
 
-package com.gm.service;
+package com.gm.risk;
 
 import com.gm.config.exception.PawoError;
 import com.gm.config.exception.PawoException;
 import com.gm.dubbo.service.IRpcOrderService;
 import com.gm.dubbo.service.impl.RpcOrderServiceImpl;
 import com.gm.order.ShoppingOrdersRequest;
+import com.gm.service.IOrderService;
 import com.gm.service.impl.OrderServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;

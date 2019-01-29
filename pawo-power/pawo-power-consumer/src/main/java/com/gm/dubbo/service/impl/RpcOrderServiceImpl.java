@@ -35,6 +35,7 @@ public class RpcOrderServiceImpl implements IRpcOrderService {
      *
      * @param ordersRequest 请求信息
      */
+    @Override
     public ShoppingOrderVo fastSubmit(ShoppingOrdersRequest ordersRequest){
        return dubboOrderService.fastSubmit(ordersRequest);
     }

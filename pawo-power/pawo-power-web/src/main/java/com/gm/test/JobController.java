@@ -11,7 +11,7 @@ import com.basic.util.DateTool;
 import com.gm.job.JobExecute;
 import com.gm.quartz.JobBeanParam;
 import com.gm.quartz.SchedulerManager;
-import com.gm.service.ShoppingInitialization;
+import com.gm.init.ShoppingInitialization;
 
 import org.quartz.SchedulerException;
 import org.springframework.beans.factory.annotation.Autowired;
