@@ -4,7 +4,7 @@
 技术实现：Springboot+Redis+RabbitMQ+Dubbo+Nginx
 
 <div  align="center">  
- <img src="http://pawo.oss-cn-beijing.aliyuncs.com/LA%29F4QO1%5B%7EZC%5B4C5I%5DL%7DS.png?Expires=1548760455&OSSAccessKeyId=TMP.AQEkHsurjvfdJQMApMA5WIjb5x_RBjIrEkE7bVncoq1hde8fQTuW_hkiCwc3ADAtAhRbSoqPcakm2uThxMWdzyf1A8uGjQIVAPdX9q2GiHw_0Us_FdmS61kkMRrb&Signature=bM4FYK1bD%2BBm8mh7juNe2KdhA1M%3D" width = "680" height = "500" alt="pawo2"   align=center >
+ <img src="http://pawo.oss-cn-beijing.aliyuncs.com/LA%29F4QO1%5B%7EZC%5B4C5I%5DL%7DS.png?Expires=1548760455&OSSAccessKeyId=TMP.AQEkHsurjvfdJQMApMA5WIjb5x_RBjIrEkE7bVncoq1hde8fQTuW_hkiCwc3ADAtAhRbSoqPcakm2uThxMWdzyf1A8uGjQIVAPdX9q2GiHw_0Us_FdmS61kkMRrb&Signature=bM4FYK1bD%2BBm8mh7juNe2KdhA1M%3D" width = "200" height = "250" alt="pawo"   align=center >
 </div>
 
 ### 项目服务模块：
