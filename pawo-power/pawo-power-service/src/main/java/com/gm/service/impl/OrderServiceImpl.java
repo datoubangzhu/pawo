@@ -189,6 +189,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, ShoppingOrders> i
         redisTemplate.opsForHash().put(PAWO_GOODS, goodsCode, goodsOrders);
         //1.2删除锁定key值
         connection.del(key);
+        connection.close();
         //2.1 订单信息入库
         ShoppingOrders shoppingOrders = mapperFacade.map(shoppingRequest, ShoppingOrders.class);
         redisTemplate.opsForHash().put(PAWO_SHOPPING_ORDER, shoppingRequest.getSn(), shoppingOrders);
