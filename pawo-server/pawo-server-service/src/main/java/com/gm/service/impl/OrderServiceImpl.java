@@ -60,23 +60,23 @@ public class OrderServiceImpl implements IOrderService {
 
     @Override
     public void mqSubmit(ShoppingOrdersRequest shoppingRequest) {
-        RedisConnectionFactory connectionFactory = redisTemplate.getConnectionFactory();
-        RedisConnection connection = connectionFactory.getConnection();
-        final String goodsCode = shoppingRequest.getGoodsCode();
-        GoodsOrders goodsOrders = (GoodsOrders) redisTemplate.opsForHash().get(PAWO_GOODS, goodsCode);
-        final int traded = goodsOrders.getVolumeTraded();
-        //1.更新库存。入mq之前已经进行量的控制，此处只更新量
-        final int newTraded = traded + shoppingRequest.getVolume();
-        goodsOrders.setVolumeTraded(newTraded);
-        //1.1更新商品数量信息
-        redisTemplate.opsForHash().delete(PAWO_GOODS, goodsCode);
-        redisTemplate.opsForHash().put(PAWO_GOODS, goodsCode, goodsOrders);
-        //1.2新增订单信息
-        ShoppingOrders shoppingOrders = mapperFacade.map(shoppingRequest, ShoppingOrders.class);
-        redisTemplate.opsForHash().put(PAWO_SHOPPING_ORDER, shoppingRequest.getSn(), shoppingOrders);
-        //1.3删除锁定key值
-        final String sn = shoppingRequest.getSn();
-        final byte[] key = sn.getBytes();
-        connection.del(key);
+            RedisConnectionFactory connectionFactory = redisTemplate.getConnectionFactory();
+            RedisConnection connection = connectionFactory.getConnection();
+            final String goodsCode = shoppingRequest.getGoodsCode();
+            GoodsOrders goodsOrders = (GoodsOrders) redisTemplate.opsForHash().get(PAWO_GOODS, goodsCode);
+            final int traded = goodsOrders.getVolumeTraded();
+            //1.更新库存。入mq之前已经进行量的控制，此处只更新量
+            final int newTraded = traded + shoppingRequest.getVolume();
+            goodsOrders.setVolumeTraded(newTraded);
+            //1.1更新商品数量信息
+            redisTemplate.opsForHash().delete(PAWO_GOODS, goodsCode);
+            redisTemplate.opsForHash().put(PAWO_GOODS, goodsCode, goodsOrders);
+            //1.2新增订单信息
+            ShoppingOrders shoppingOrders = mapperFacade.map(shoppingRequest, ShoppingOrders.class);
+            redisTemplate.opsForHash().put(PAWO_SHOPPING_ORDER, shoppingRequest.getSn(), shoppingOrders);
+            //1.3删除锁定key值
+            final String sn = shoppingRequest.getSn();
+            final byte[] key = sn.getBytes();
+            connection.del(key);
     }
 }

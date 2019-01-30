@@ -134,8 +134,6 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, ShoppingOrders> i
     public ShoppingOrderVo submitQueue(ShoppingOrdersRequest ordersRequest) {
         final String sn = OrderUtil.getOrderSn();
         ordersRequest.setSn(sn);
-        log.info("准备发送到mq订单信息================================，单号：{},订单详情：{}", sn, ordersRequest.toString());
-
         RedisConnectionFactory redisConnectionFactory = redisTemplate.getConnectionFactory();
         RedisConnection connection = redisConnectionFactory.getConnection();
         final byte[] key = sn.getBytes();
@@ -213,6 +211,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, ShoppingOrders> i
         }
         //2.发送到mq
         template.convertAndSend(ORDER_EXCHANGE,ORDER_KEY,shoppingRequest);
+        log.info("订单发送 =============》 " + shoppingRequest.toString());
         return mapperFacade.map(shoppingRequest, ShoppingOrderVo.class);
     }
 }
