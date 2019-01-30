@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.gm.config.exception.PawoError;
 import com.gm.config.exception.PawoException;
+import com.gm.config.rabbitmq.PawoMqConstant;
 import com.gm.goods.GoodsOrders;
 import com.gm.goods.GoodsStatus;
 import com.gm.mapper.OrderMapper;
@@ -16,6 +17,7 @@ import com.gm.service.IGoodsOrderService;
 import com.gm.service.IOrderService;
 import com.gm.util.OrderUtil;
 
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -29,6 +31,9 @@ import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import ma.glasnost.orika.MapperFacade;
 
+import static com.gm.config.rabbitmq.PawoMqConstant.ORDER_EXCHANGE;
+import static com.gm.config.rabbitmq.PawoMqConstant.ORDER_KEY;
+
 /**
  * shoppingorder service interface
  *
@@ -36,20 +41,21 @@ import ma.glasnost.orika.MapperFacade;
  */
 @Service
 @Slf4j
-public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> implements IOrderService {
+public class OrderServiceImpl extends ServiceImpl<OrderMapper, ShoppingOrders> implements IOrderService {
 
-    private final MapperFacade       mapperFacade;
-    private final IGoodsOrderService goodsOrderService;
-    private final RedisTemplate<String,Object>      redisTemplate;
+    private final MapperFacade                  mapperFacade;
+    private final IGoodsOrderService            goodsOrderService;
+    private final RedisTemplate<String, Object> redisTemplate;
+    private final RabbitTemplate                template;
 
     /**
      * redis超时时间 毫秒
      */
-    private static final int EXPIRE_TIME = 2000;
+    private static final int    EXPIRE_TIME         = 2000;
     /**
      * redis商品数据库键值
      */
-    private static final String PAWO_GOODS = "pawo:goods";
+    private static final String PAWO_GOODS          = "pawo:goods";
     /**
      * redis订单数据库键值
      */
@@ -59,10 +65,11 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> im
     @Autowired
     public OrderServiceImpl(MapperFacade mapperFacade,
                             IGoodsOrderService goodsOrderService,
-                            RedisTemplate<String,Object> redisTemplate) {
+                            RedisTemplate<String, Object> redisTemplate, RabbitTemplate template) {
         this.mapperFacade = mapperFacade;
         this.goodsOrderService = goodsOrderService;
         this.redisTemplate = redisTemplate;
+        this.template = template;
     }
 
 
@@ -72,30 +79,30 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> im
         final String sn = shoppingOrder.getSellerSn();
         final String code = shoppingOrder.getGoodsCode();
         //1.加锁
-        GoodsOrders goodsOrders = goodsOrderService.getForUpdate(sn,code);
+        GoodsOrders goodsOrders = goodsOrderService.getForUpdate(sn, code);
         //2.商品数额更改,此处采取悲观锁，支持nginx负载均衡
         final int volumeTraded = goodsOrders.getVolumeTraded();
         final Integer volume = shoppingOrder.getVolume();
-        if(volume<=0){
+        if (volume <= 0) {
             throw new PawoException("宝贝已经没有了！", PawoError.AUTH_FAILURE.getCode());
         }
         final int newTraded = volume + volumeTraded;
         goodsOrders.setVolumeTraded(newTraded);
         boolean ok = goodsOrderService.update(goodsOrders, new EntityWrapper<GoodsOrders>()
-                .eq("SELLER_SN",sn)
-                .eq("GOODS_CODE",code)
+                .eq("SELLER_SN", sn)
+                .eq("GOODS_CODE", code)
                 .eq("STATUS", GoodsStatus.NORMAL)
-                .eq("DELETE_FLAG",0));
-        if(!ok){
-            throw new PawoException("下单失败！",PawoError.SUBMIT_FAILURE.getCode());
+                .eq("DELETE_FLAG", 0));
+        if (!ok) {
+            throw new PawoException("下单失败！", PawoError.SUBMIT_FAILURE.getCode());
         }
         //3.订单入库
-        ShoppingOrders shoppingEntity = mapperFacade.map(shoppingOrder,ShoppingOrders.class);
+        ShoppingOrders shoppingEntity = mapperFacade.map(shoppingOrder, ShoppingOrders.class);
         final String orderSn = OrderUtil.getOrderSn();
         shoppingEntity.setSn(orderSn);
         baseMapper.insert(shoppingEntity);
         //4.返回页面结果
-        return mapperFacade.map(shoppingEntity,ShoppingOrderVo.class);
+        return mapperFacade.map(shoppingEntity, ShoppingOrderVo.class);
     }
 
 
@@ -103,20 +110,44 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> im
     public ShoppingOrderVo submitCache(ShoppingOrdersRequest ordersRequest) {
         final String sn = OrderUtil.getOrderSn();
         ordersRequest.setSn(sn);
-        log.info("准备处理订单信息================================，单号：{},订单详情：{}",sn,ordersRequest.toString());
+        log.info("准备通过更新缓存处理订单信息================================，单号：{},订单详情：{}", sn, ordersRequest.toString());
 
         RedisConnectionFactory redisConnectionFactory = redisTemplate.getConnectionFactory();
         RedisConnection connection = redisConnectionFactory.getConnection();
         final byte[] key = sn.getBytes();
-        final long expireValue = EXPIRE_TIME/1000;
+        final long expireValue = EXPIRE_TIME / 1000;
         final byte[] value = ordersRequest.toString().getBytes();
-        final long endTime = System.currentTimeMillis()+EXPIRE_TIME;
+        final long endTime = System.currentTimeMillis() + EXPIRE_TIME;
 
-        while (System.currentTimeMillis()<endTime) {
-            boolean setnx = connection.setNX(key,value);
-            if(setnx){
-                connection.expire(key,expireValue);
-                return handleCache(ordersRequest,connection,key);
+        while (System.currentTimeMillis() < endTime) {
+            boolean setnx = connection.setNX(key, value);
+            if (setnx) {
+                connection.expire(key, expireValue);
+                return handleCache(ordersRequest, connection, key);
+            }
+            //如果没有获取到锁，重试到超时时间
+        }
+        throw new PawoException("宝贝已经没有了！", PawoError.SUBMIT_FAILURE.getCode());
+    }
+
+    @Override
+    public ShoppingOrderVo submitQueue(ShoppingOrdersRequest ordersRequest) {
+        final String sn = OrderUtil.getOrderSn();
+        ordersRequest.setSn(sn);
+        log.info("准备发送到mq订单信息================================，单号：{},订单详情：{}", sn, ordersRequest.toString());
+
+        RedisConnectionFactory redisConnectionFactory = redisTemplate.getConnectionFactory();
+        RedisConnection connection = redisConnectionFactory.getConnection();
+        final byte[] key = sn.getBytes();
+        final long expireValue = EXPIRE_TIME / 1000;
+        final byte[] value = ordersRequest.toString().getBytes();
+        final long endTime = System.currentTimeMillis() + EXPIRE_TIME;
+
+        while (System.currentTimeMillis() < endTime) {
+            boolean setnx = connection.setNX(key, value);
+            if (setnx) {
+                connection.expire(key, expireValue);
+                return handleQueue(ordersRequest, connection, key);
             }
             //如果没有获取到锁，重试到超时时间
         }
@@ -125,42 +156,64 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> im
 
     @Override
     public List<GoodsOrders> list() {
-        List<Object> goodsCodes =  redisTemplate.boundHashOps(PAWO_GOODS).values();
+        List<Object> goodsCodes = redisTemplate.boundHashOps(PAWO_GOODS).values();
         List<GoodsOrders> list = Lists.newArrayListWithExpectedSize(goodsCodes.size());
-        for(Object obj:goodsCodes){
-            list.add((GoodsOrders)obj);
+        for (Object obj : goodsCodes) {
+            list.add((GoodsOrders) obj);
         }
         return list;
     }
 
     /**
-     * 处理订单
+     * 通过缓存处理订单
      *
      * @param shoppingRequest 订单请求
      * @return 下单结果
      */
-    private ShoppingOrderVo handleCache(ShoppingOrdersRequest shoppingRequest,RedisConnection connection,byte[] key){
+    private ShoppingOrderVo handleCache(ShoppingOrdersRequest shoppingRequest, RedisConnection connection, byte[] key) {
         final String goodsCode = shoppingRequest.getGoodsCode();
-        GoodsOrders goodsOrders = (GoodsOrders)redisTemplate.opsForHash().get(PAWO_GOODS,goodsCode);
+        GoodsOrders goodsOrders = (GoodsOrders) redisTemplate.opsForHash().get(PAWO_GOODS, goodsCode);
         final int traded = goodsOrders.getVolumeTraded();
         final int total = goodsOrders.getVolumeTotal();
-        final int rest = total-traded;
+        final int rest = total - traded;
         //1.余量控制
         final int newTraded = traded + shoppingRequest.getVolume();
-        if(newTraded> total){
-            throw new PawoException("宝贝存货只有"+rest+"了！",PawoError.SUBMIT_FAILURE.getCode());
+        if (newTraded > total) {
+            throw new PawoException("宝贝存货只有" + rest + "了！", PawoError.SUBMIT_FAILURE.getCode());
         }
         goodsOrders.setVolumeTraded(newTraded);
         //1.1更新商品数量信息
-        redisTemplate.opsForHash().delete(PAWO_GOODS,goodsCode);
-        redisTemplate.opsForHash().put(PAWO_GOODS,goodsCode,goodsOrders);
+        redisTemplate.opsForHash().delete(PAWO_GOODS, goodsCode);
+        redisTemplate.opsForHash().put(PAWO_GOODS, goodsCode, goodsOrders);
         //1.2删除锁定key值
         connection.del(key);
         //2.返回信息设置
-        ShoppingOrderVo shoppingOrderVo = mapperFacade.map(shoppingRequest,ShoppingOrderVo.class);
-        ShoppingOrders shoppingOrders = mapperFacade.map(shoppingRequest,ShoppingOrders.class);
-        redisTemplate.opsForHash().put(PAWO_SHOPPING_ORDER,shoppingRequest.getSn(),shoppingOrders);
-        return shoppingOrderVo;
+        ShoppingOrders shoppingOrders = mapperFacade.map(shoppingRequest, ShoppingOrders.class);
+        redisTemplate.opsForHash().put(PAWO_SHOPPING_ORDER, shoppingRequest.getSn(), shoppingOrders);
+        return mapperFacade.map(shoppingRequest, ShoppingOrderVo.class);
+    }
+
+
+    /**
+     * MQ 处理订单
+     *
+     * @param shoppingRequest 订单请求
+     * @return 下单结果
+     */
+    private ShoppingOrderVo handleQueue(ShoppingOrdersRequest shoppingRequest, RedisConnection connection, byte[] key) {
+        final String goodsCode = shoppingRequest.getGoodsCode();
+        GoodsOrders goodsOrders = (GoodsOrders) redisTemplate.opsForHash().get(PAWO_GOODS, goodsCode);
+        final int traded = goodsOrders.getVolumeTraded();
+        final int total = goodsOrders.getVolumeTotal();
+        final int rest = total - traded;
+        //1.余量控制
+        final int newTraded = traded + shoppingRequest.getVolume();
+        if (newTraded > total) {
+            throw new PawoException("宝贝存货只有" + rest + "了！", PawoError.SUBMIT_FAILURE.getCode());
+        }
+        //2.发送到mq
+        template.convertAndSend(ORDER_EXCHANGE,ORDER_KEY,shoppingRequest);
+        return mapperFacade.map(shoppingRequest, ShoppingOrderVo.class);
     }
 }
 

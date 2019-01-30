@@ -43,7 +43,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @Component
 @Slf4j
-public class OrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> implements IDubboOrderService {
+public class RpcOrderServiceImpl extends ServiceImpl<OrderMapper,ShoppingOrders> implements IDubboOrderService {
 
     @Resource
     private RedisTemplate<String,Object> redisTemplate;

@@ -59,12 +59,12 @@ public class OrderController {
 
 
     /**
-     * 下单
+     * 测试-直接入缓存下单
      *
      * @param shoppingOrder 订单信息
      */
-    @RequestMapping(value = "submit", method = RequestMethod.POST)
-    public ResponseEntity<ShoppingOrderVo> handleOrder(@RequestBody @Valid ShoppingOrdersRequest shoppingOrder,HttpServletResponse response,HttpServletRequest request){
+    @RequestMapping(value = "submit/test", method = RequestMethod.POST)
+    public ResponseEntity<ShoppingOrderVo> handleOrder(@RequestBody @Valid ShoppingOrdersRequest shoppingOrder){
         //数据库   ShoppingOrderVo shoppingOrderVo =  orderService.submit(shoppingOrder);
         IOrderService service =  orderRiskManager.getOrderService();
         ShoppingOrderVo shoppingOrderVo =  service.submitCache(shoppingOrder);
@@ -72,9 +72,20 @@ public class OrderController {
     }
 
 
+    /**
+     * Mq 下单
+     */
+    @RequestMapping("submit")
+    public ResponseEntity<ShoppingOrderVo> handleOrderQueue(@RequestBody @Valid ShoppingOrdersRequest shoppingOrder){
+        IOrderService orderService = orderRiskManager.getOrderService();
+        ShoppingOrderVo shoppingOrderVo = orderService.submitQueue(shoppingOrder);
+        return ResponseEntity.ok(shoppingOrderVo);
+    }
+
+
 
     /**
-     * 抢单下单
+     * rpc 抢单下单
      *
      * @param shoppingOrder 订单信息
      */

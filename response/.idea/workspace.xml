@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3b2c7fd-1fe9-4376-94d8-0a0649940b2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../pawo-common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pawo-common/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pawo-power/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pawo-power/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pawo-power/data/elasticsearch/nodes/0/_state/global-92.st" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pawo-power/pawo-power-app/pawo-power-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../pawo-power/pawo-power-app/pawo-power-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pawo-power/pawo-power-consumer/src/main/java/com/gm/dubbo/service/impl/RpcOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pawo-power/pawo-power-consumer/src/main/java/com/gm/dubbo/service/impl/RpcOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pawo-power/pawo-power-consumer/target/classes/com/gm/dubbo/service/impl/RpcOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pawo-power/pawo-power-consumer/target/classes/com/gm/dubbo/service/impl/RpcOrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pawo-power/pawo-power-web/src/main/java/com/gm/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pawo-power/pawo-power-web/src/main/java/com/gm/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pawo-power/pawo-power-web/target/classes/com/gm/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pawo-power/pawo-power-web/target/classes/com/gm/controller/OrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />

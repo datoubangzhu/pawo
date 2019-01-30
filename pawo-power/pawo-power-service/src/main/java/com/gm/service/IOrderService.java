@@ -25,12 +25,19 @@ public interface IOrderService extends IService<ShoppingOrders> {
      */
     ShoppingOrderVo submit(ShoppingOrdersRequest orderRequest);
     /**
-     * 缓存数据库下单接口
+     * (测试)缓存数据库下单接口
      *
      * @param orderRequest request param
      * @return 结果
      */
     ShoppingOrderVo submitCache(ShoppingOrdersRequest orderRequest);
+    /**
+     * MQ下单接口
+     *
+     * @param orderRequest request param
+     * @return 结果
+     */
+    ShoppingOrderVo submitQueue(ShoppingOrdersRequest orderRequest);
     /**
      * 获取商品信息
      *

@@ -65,6 +65,12 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!-- rabbitmq插件 -->
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>1.7.11.RELEASE</version>
+        </dependency>
 
     </dependencies>
 

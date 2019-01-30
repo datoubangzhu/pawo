@@ -1,0 +1,4 @@
+com\gm\config\RabbitConfig.class
+com\gm\config\DubboConfig.class
+com\gm\config\MybatisPlusConfig.class
+com\PawoServerApplication.class

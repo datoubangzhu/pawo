@@ -6,6 +6,8 @@
 package com.gm.config;
 
 
+import com.gm.config.rabbitmq.PawoMqConstant;
+
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -16,6 +18,7 @@ import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.listener.RabbitListenerContainerFactory;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -33,7 +36,7 @@ import org.springframework.context.annotation.Configuration;
  * @version 1.0
  * @since JDK 1.7
  */
-//@Configuration
+@Configuration
 public class MqConfig {
 
 
@@ -46,6 +49,13 @@ public class MqConfig {
         factory.setAcknowledgeMode(AcknowledgeMode.MANUAL);
         return factory;
     }
+
+
+    @Bean
+    public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory){
+        return  new RabbitAdmin(connectionFactory);
+    }
+
 
 
     /**
@@ -62,25 +72,31 @@ public class MqConfig {
 
     /**
      * ****************************************************************************
-     * Topic模式
+     * 订单下单采用-Topic模式，此处配置采用rabbitAdmin配置
      *
      */
     @Bean
-    public Queue testQueue() {
-        return new Queue("testQueue");
+    public Queue order(RabbitAdmin rabbitAdmin) {
+        Queue queue = new Queue(PawoMqConstant.ORDER_QUEUE);
+        rabbitAdmin.declareQueue(queue);
+        return queue;
     }
 
 
     @Bean
-    public TopicExchange testExchange() {
-        return new TopicExchange("testExchange");
+    public TopicExchange orderExchange(RabbitAdmin rabbitAdmin) {
+        TopicExchange topicExchange = new TopicExchange(PawoMqConstant.ORDER_EXCHANGE);
+        rabbitAdmin.declareExchange(topicExchange);
+        return topicExchange;
     }
 
 
 
     @Bean
-    Binding bindingExchangeMessageTest(@Qualifier("testQueue") Queue queueMessage, @Qualifier("testExchange") TopicExchange exchange) {
-        return BindingBuilder.bind(queueMessage).to(exchange).with("testKey");
+    Binding bindingExchangePawo(@Qualifier("order") Queue queueMessage, @Qualifier("orderExchange") TopicExchange exchange,RabbitAdmin rabbitAdmin) {
+        Binding binding =  BindingBuilder.bind(queueMessage).to(exchange).with(PawoMqConstant.ORDER_KEY);
+        rabbitAdmin.declareBinding(binding);
+        return binding;
     }
 
     /**

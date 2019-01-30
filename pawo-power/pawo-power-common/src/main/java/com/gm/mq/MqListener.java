@@ -26,22 +26,22 @@ import java.io.IOException;
  * @since JDK 1.7
  */
 @Component
-@RabbitListener(queues = "hello",containerFactory = "rabbitListenerContainerFactory")
+@RabbitListener(containerFactory = "rabbitListenerContainerFactory")
 public class MqListener {
 
-    @RabbitListener(queues = "queue")
-    public void process(String hello) {
-        System.out.println("Receiver  : " + hello);
-    }
-
-    @RabbitListener(queues = "topicQueue")
-    public void exchangeProcess(String hello) {
-        System.out.println("TopicQueue Receiver  : " + hello);
-    }
-
-    @RabbitListener(queues = "headerQueue")
-    public void headersProcess(byte[] hello, Channel channel,@Header(AmqpHeaders.DELIVERY_TAG) long tag) throws IOException {
-        System.out.println("HeadersQueue Receiver  : " + new String(hello));
-        channel.basicAck(tag,false);
-    }
+//    @RabbitListener(queues = "queue")
+//    public void process(String hello) {
+//        System.out.println("Receiver  : " + hello);
+//    }
+//
+//    @RabbitListener(queues = "topicQueue")
+//    public void exchangeProcess(String hello) {
+//        System.out.println("TopicQueue Receiver  : " + hello);
+//    }
+//
+//    @RabbitListener(queues = "headerQueue")
+//    public void headersProcess(byte[] hello, Channel channel,@Header(AmqpHeaders.DELIVERY_TAG) long tag) throws IOException {
+//        System.out.println("HeadersQueue Receiver  : " + new String(hello));
+//        channel.basicAck(tag,false);
+//    }
 }

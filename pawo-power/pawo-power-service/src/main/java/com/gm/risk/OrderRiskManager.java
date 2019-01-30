@@ -71,6 +71,7 @@ public class OrderRiskManager {
     }
 
 
+
     public IOrderService getOrderService() {
         return (IOrderService) Proxy.newProxyInstance(IOrderService.class.getClassLoader(),
                 OrderServiceImpl.class.getInterfaces(), new InvocationHandler() {
