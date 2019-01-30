@@ -12,6 +12,11 @@ spring:
     host: 192.168.3.140
     port: 8899
     password:
+#    pool:
+#      max-idle: 100
+#      min-idle: 1
+#      max-active: 1000
+#      max-wait: -1
   #mybatis-plus 要求配置
   datasource:
 #    driver-class-name: org.h2.Driver

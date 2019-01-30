@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pawo-server-app/src/main/resources/application.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="260">
+              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pawo-server-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="541">
@@ -187,12 +187,12 @@
       <list>
         <option value="$PROJECT_DIR$/pawo-server-service/pom.xml" />
         <option value="$PROJECT_DIR$/pawo-server-common/pom.xml" />
-        <option value="$PROJECT_DIR$/pawo-server-app/src/main/resources/application.yaml" />
         <option value="$PROJECT_DIR$/pawo-server-app/src/main/java/com/gm/config/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/pawo-server-dubbo/src/main/java/com/gm/dubbo/service/impl/RpcOrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/pawo-server-service/src/main/java/com/gm/service/IOrderService.java" />
         <option value="$PROJECT_DIR$/pawo-server-service/src/main/java/com/gm/listener/MqListener.java" />
         <option value="$PROJECT_DIR$/pawo-server-service/src/main/java/com/gm/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pawo-server-app/src/main/resources/application.yaml" />
       </list>
     </option>
   </component>
@@ -280,6 +280,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pawo-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pawo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="pawo-server-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pawo-server" type="b2602c69:ProjectViewProjectNode" />
@@ -488,14 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pawo-server-app/src/main/resources/application.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/1.7.7.RELEASE/spring-amqp-1.7.7.RELEASE.jar!/org/springframework/amqp/support/AmqpHeaders.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -618,6 +618,14 @@
             <element signature="e#1460#1461#0" expanded="true" />
             <element signature="e#1508#1509#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pawo-server-app/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
