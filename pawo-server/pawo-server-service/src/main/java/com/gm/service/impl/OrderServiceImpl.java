@@ -59,7 +59,7 @@ public class OrderServiceImpl implements IOrderService {
 
 
     @Override
-    public void mqSubmit(ShoppingOrdersRequest shoppingRequest) {
+    public boolean mqSubmit(ShoppingOrdersRequest shoppingRequest) {
             RedisConnectionFactory connectionFactory = redisTemplate.getConnectionFactory();
             RedisConnection connection = connectionFactory.getConnection();
             final String goodsCode = shoppingRequest.getGoodsCode();
@@ -78,5 +78,6 @@ public class OrderServiceImpl implements IOrderService {
             final String sn = shoppingRequest.getSn();
             final byte[] key = sn.getBytes();
             connection.del(key);
+            return true;
     }
 }

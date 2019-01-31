@@ -63,12 +63,12 @@ public class JobExecute extends QuartzJobBean {
     @SuppressWarnings("unchecked")
     private static final ExecutorService JOB_EXECUTOR_POOL = new ThreadPoolExecutor(10, 100, 1, TimeUnit.MINUTES,
             new LinkedBlockingQueue(Integer.MAX_VALUE)
-                , new ThreadFactory() {
-                    @Override
-                    public Thread newThread(Runnable r) {
-                        return new Thread(r);
-                    }
-                });
+            , new ThreadFactory() {
+        @Override
+        public Thread newThread(Runnable r) {
+            return new Thread(r);
+        }
+    });
 
     private ExecutorService service = Executors.newSingleThreadExecutor();
 

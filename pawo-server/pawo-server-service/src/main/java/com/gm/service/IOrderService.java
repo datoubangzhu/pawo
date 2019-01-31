@@ -23,7 +23,9 @@ public interface IOrderService {
 
     /**
      * mq处理下单接口
+     *
      * @param shoppingOrdersRequest 请求信息
+     * @return 下单是否成功
      */
-    void mqSubmit(ShoppingOrdersRequest shoppingOrdersRequest);
+    boolean mqSubmit(ShoppingOrdersRequest shoppingOrdersRequest);
 }
