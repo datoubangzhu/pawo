@@ -1,7 +1,7 @@
-E:\gmzhaoExample\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\exception\PawoError.java
-E:\gmzhaoExample\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaMapperFactoryConfigurer.java
-E:\gmzhaoExample\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaAutoConfiguration.java
-E:\gmzhaoExample\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaMapperFactoryBuilderConfigurer.java
-E:\gmzhaoExample\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\exception\PawoException.java
-E:\gmzhaoExample\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\rabbitmq\PawoMqConstant.java
-E:\gmzhaoExample\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaProperties.java
+D:\develop\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaMapperFactoryBuilderConfigurer.java
+D:\develop\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaMapperFactoryConfigurer.java
+D:\develop\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaProperties.java
+D:\develop\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\exception\PawoException.java
+D:\develop\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\orika\OrikaAutoConfiguration.java
+D:\develop\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\rabbitmq\PawoMqConstant.java
+D:\develop\pawo\pawo-common\pawo-common-config\src\main\java\com\gm\config\exception\PawoError.java

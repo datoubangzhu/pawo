@@ -1,7 +1,7 @@
 com\gm\config\exception\PawoException.class
-com\gm\config\exception\PawoError.class
+com\gm\config\orika\OrikaProperties.class
+com\gm\config\orika\OrikaMapperFactoryBuilderConfigurer.class
 com\gm\config\orika\OrikaAutoConfiguration.class
 com\gm\config\rabbitmq\PawoMqConstant.class
-com\gm\config\orika\OrikaMapperFactoryBuilderConfigurer.class
 com\gm\config\orika\OrikaMapperFactoryConfigurer.class
-com\gm\config\orika\OrikaProperties.class
+com\gm\config\exception\PawoError.class

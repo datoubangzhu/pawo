@@ -1,5 +1,6 @@
 package com.gm.service.impl;
 
+import cn.hutool.core.util.ObjectUtil;
 import com.google.common.collect.Lists;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
@@ -175,6 +176,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, ShoppingOrders> i
     private ShoppingOrderVo handleCache(ShoppingOrdersRequest shoppingRequest, RedisConnection connection, byte[] key) {
         final String goodsCode = shoppingRequest.getGoodsCode();
         GoodsOrders goodsOrders = (GoodsOrders) redisTemplate.opsForHash().get(PAWO_GOODS, goodsCode);
+        if(ObjectUtil.isNull(goodsOrders)){
+            throw new PawoException("没有可用缓存信息",PawoError.SUBMIT_FAILURE.getCode());
+        }
         final int traded = goodsOrders.getVolumeTraded();
         final int total = goodsOrders.getVolumeTotal();
         final int rest = total - traded;
@@ -209,6 +213,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, ShoppingOrders> i
         final String goodsCode = shoppingRequest.getGoodsCode();
         log.info("handQueue=======获取商品库存信息");
         GoodsOrders goodsOrders = (GoodsOrders) redisTemplate.opsForHash().get(PAWO_GOODS, goodsCode);
+        if(ObjectUtil.isNull(goodsOrders)){
+            throw new PawoException("没有可用缓存信息",PawoError.SUBMIT_FAILURE.getCode());
+        }
         log.info("handQueue=======获取商品库存信息成功");
         final int traded = goodsOrders.getVolumeTraded();
         final int total = goodsOrders.getVolumeTotal();

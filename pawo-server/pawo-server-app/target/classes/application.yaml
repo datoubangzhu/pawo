@@ -10,6 +10,11 @@ spring:
     host: 127.0.0.1
     port: 8899
     password:
+    pool:
+      max-idle: 100
+      min-idle: 1
+      max-active: 1000
+      max-wait: -1
   datasource:
     #    driver-class-name: org.h2.Driver
     #    schema: classpath:db/schema-h2.sql

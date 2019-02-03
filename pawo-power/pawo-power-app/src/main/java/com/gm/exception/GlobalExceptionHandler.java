@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.io.Serializable;
+import java.lang.reflect.UndeclaredThrowableException;
 import java.util.Set;
 
 import lombok.extern.slf4j.Slf4j;
@@ -44,13 +45,22 @@ public class GlobalExceptionHandler implements Serializable{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
+
+    @ExceptionHandler(value = UndeclaredThrowableException.class)
+    @ResponseBody
+    public ResponseBodyBasic basic(UndeclaredThrowableException e){
+        return ResponseBodyBasic.ok();
+    }
+
+
+
     /**
-     * 自定义异常处理
+     * 自定义异常处理 500
      *
      * @param e 自定义抛出异常
      * @return 页面返回结果
      */
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(value = PawoException.class)
     @ResponseBody
     public ResponseBodyBasic basic(PawoException e){
@@ -59,7 +69,6 @@ public class GlobalExceptionHandler implements Serializable{
                 .code(e.getErrorCode())
                 .message(e.getMessage()).build();
     }
-
 
     /**
      * 500 默认处理
@@ -78,6 +87,12 @@ public class GlobalExceptionHandler implements Serializable{
     }
 
 
+    /**
+     * 参数校验失败异常处理
+     *
+     * @param e 参数e
+     * @return 结果
+     */
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(value = ConstraintViolationException.class)
     @ResponseBody

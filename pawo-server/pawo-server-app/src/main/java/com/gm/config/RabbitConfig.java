@@ -29,7 +29,7 @@ import org.springframework.context.annotation.Configuration;
  * @version 1.0
  * @since JDK 1.7
  */
-@Configuration
+//@Configuration
 public class RabbitConfig {
 
     @Bean

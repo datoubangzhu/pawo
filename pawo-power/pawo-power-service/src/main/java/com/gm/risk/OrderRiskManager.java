@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
@@ -78,7 +79,11 @@ public class OrderRiskManager {
                     @Override
                     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                         checkOrdinaryOrder(method,args);
-                        return method.invoke(orderService, args);
+//                        try {
+                            return method.invoke(orderService, args);
+//                        }catch (InvocationTargetException e){
+//                            throw e.getCause();
+//                        }
                     }
                 });
     }
