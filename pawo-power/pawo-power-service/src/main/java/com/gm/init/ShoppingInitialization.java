@@ -13,6 +13,7 @@ import com.gm.config.exception.PawoError;
 import com.gm.config.exception.PawoException;
 import com.gm.goods.GoodsOrders;
 
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -53,7 +54,6 @@ public class ShoppingInitialization {
         this.redisTemplate = redisTemplate;
     }
 
-
     /**
      * 每天早上四点，开始重新初始化数据
      */
@@ -65,7 +65,7 @@ public class ShoppingInitialization {
             return;
         }
         try {
-            String path = "pawo_goods_init.txt";
+            String path = "D:\\develop\\pawo\\pawo-power\\pawo-power-service\\src\\main\\resource\\pawo_goods_init.txt";
             FileReader fileReader = new FileReader(path);
             BufferedReader reader = new BufferedReader(fileReader);
             String readLine;
