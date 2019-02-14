@@ -5,9 +5,6 @@ package com.gm.page.util;/*
  */
 
 
-import com.gm.page.util.PageRequest;
-import com.gm.page.util.PageResponse;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

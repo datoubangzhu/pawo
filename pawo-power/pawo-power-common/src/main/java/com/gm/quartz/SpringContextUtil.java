@@ -24,6 +24,7 @@ import org.springframework.stereotype.Component;
 public class SpringContextUtil implements ApplicationContextAware {
     private static ApplicationContext applicationContext;
 
+
     public static ApplicationContext getApplicationContext() {
         assertApplicationContext();
         return applicationContext;

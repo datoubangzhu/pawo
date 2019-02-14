@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Data
 class TestDemo implements Serializable {
 
-        private int id;
+        private double id;
         private String name;
         private String sex;
         private String id_card;
