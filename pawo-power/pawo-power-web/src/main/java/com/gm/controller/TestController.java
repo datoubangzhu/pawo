@@ -74,18 +74,4 @@ public class TestController {
         PageResponse<TestDemo> pageResponse = PageUtil.noSqlHandlePage(pageRequest,testList);
         return ResponseEntity.ok(pageResponse);
     }
-
-
-    @GetMapping("test")
-    public void check(){
-        for(int i = 0;i<100;i++){
-            TestDemo testDemo = new TestDemo();
-            testDemo.setId(i);
-            testDemo.setName("测试"+i);
-            testDemo.setAge(i+10);
-            testDemo.setSex("男");
-            testDemo.setWeight("150");
-            redisTemplate.opsForHash().put("key","list_key"+i,testDemo);
-        }
-    }
 }
